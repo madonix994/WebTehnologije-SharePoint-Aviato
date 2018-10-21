@@ -1,0 +1,1709 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 769px){
+body,div,p,ul,ol,li,dl,dt,img,form,pre{ margin:0;
+padding:0;
+border:0;
+}
+
+body{
+	text-align:center;
+	
+	}
+
+
+/*Dimenzije cele strane i Za heder.*/
+/*-------------------------------------------------------------------------*/
+#container{ height:4640px;}
+
+header{ height:110px;
+background:#036;
+width:100%;
+z-index:10;
+position:fixed;
+}
+
+
+	/*Dimenzija strane i Dizajn boje iza prvog diva! */ /*-------------------------------------------------------------------------*/
+	
+#content {
+		
+		width:100%;
+		position:relative;
+		top:640px;
+		background:url(../slike/noise-bg.png);
+		height:4000px;
+		bottom:80px;
+		}
+
+	
+/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo)*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	/*Centrirano*/
+	margin-left:20%;
+	margin-top:4%;
+}
+
+/*Pravljenje horizontalne liste sa razmacima*/
+li {
+	display:inline-block;
+	float: left;
+}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family:Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno, kao i podesavanje njegove velicine (duzina, sirina,...)*/
+li ul li {
+	display: block;
+	float: none;
+	position:relative;
+	right:168px;
+	bottom:34px;
+}
+
+/*Sprecavanje teksta da se prelomi*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Podesavanje logoa!*/
+#logo{ 
+	position:absolute;
+	width:25%;
+	height:85%;
+	bottom:35px;
+	left:40%;
+}
+
+
+
+
+/*Podesavanje futera!*/
+.futer{ 
+position:relative;
+	bottom:0px;
+	height:60px;
+	width:100%;
+	background: #036;
+	color:white;
+}
+
+.futer p{ 
+position:relative;
+	top:25px;
+	margin-left:-150px;}
+
+.slike img{ 
+position:relative;
+left:170px;
+bottom:5px;
+height:40px;
+padding-left:15px;
+
+}
+
+
+
+
+
+/*Podesavanje bannera!*/
+#banner{
+	background:url(../slike/banner4.jpg);
+	background-size:cover;
+	width:100%;
+	height:540px;
+	position:fixed;
+	top:100px;
+	}
+	
+	
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvidiv{
+	margin-bottom:50px;
+	background-color:#FFFFFF;
+	width:90%;
+	padding:20px;
+	margin-left:50px;
+	border:2px solid #CCCCCC;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20px;
+	text-align:justify;
+	box-shadow: 0px 0px 15px black;
+}	
+
+.sat{
+	position:absolute;
+	margin-right:30%;
+	top:35px;}
+
+/*Podesavanja prvog paragrafa! */
+#prvi{font-family:Tahoma, Geneva, sans-serif;
+font-size:20px;}
+
+
+
+/*Podesavanja naslova! */
+h1{ text-align:center;
+	color:#0099FF;}
+
+h3{ text-align:center;
+	color:#0099FF;}
+
+
+
+
+/*Podesavanja motoa na baneru! */
+#moto{
+	font-size:60px;
+	text-align:center;
+	color:white;
+	padding-top:30px;
+	padding-right:800px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+#moto2{
+	font-size:60px;
+	text-align:center;
+	color:white;
+	padding-top:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+#moto3{
+	font-size:60px;
+	text-align:center;
+	color:white;
+	padding-top:20px;
+	padding-left:800px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+
+
+
+
+/*Podesavanja div-a koje sadrze tri sekcije!  */
+.kutija{
+	padding:5px;
+	width:1050px;
+height:400px;
+ }	
+	
+	
+	
+/*Podesavanja dimenizija i izgleda svake od tri sekcija! */		
+.sekcija{ 
+position:absolute;
+width:350px;
+height:450px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:20px;
+padding:8px;
+border-radius:15px;
+margin-top:-3px;
+box-shadow: 0px 0px 15px blue;
+}
+
+
+
+/*Pozicioniranje slika u sekcijama */	
+.sekcija img{
+	margin-left:130px;
+	height:90px;
+	width:90px;}
+	
+	
+	
+/*Pozicioniranje sekcije 2 u prvoj kutiji*/	
+#sek2{
+	left:495px;
+	}
+
+/*Pozicioniranje sekcije 3 u prvoj kutiji*/		
+#sek3{
+	left:910px;}
+
+
+
+/*Podesavanje slike tj drugog banera ispod sekcija*/	
+#ban1{ width:1210px;
+height:250px;}
+
+
+
+
+/*Podesavanja sledeceg drugog po redu div-a koje sadrze dve sekcije!  */
+.kutija2{
+	padding:5px;
+	width:1050px;
+height:540px; }
+
+
+/*Podesavanja dimenizija i izgleda obe sekcije u sledecoj kutiji! */	
+.sekcija2{ 
+position:absolute;
+border-radius:15px;
+width:530px;
+height:540px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:20px;
+}
+
+
+/*Pozicioniranje slike u prvoj sekciji u drugoj kutiji */
+#slik1{width:280px;
+height:330px;
+margin-left:130px;
+margin-top:-30px;  }
+
+
+
+/*Pozicioniranje slike u drugoj sekciji u drugoj kutiji */
+#slik2{ width:350px;
+height:280px;
+margin-left:110px;}
+
+
+/*Pozicioniranje prve sekcije u drugoj kutiji */
+#sek4{
+	left:80px;}
+
+
+/*Pozicioniranje druge sekcije u drugoj kutiji */	
+#sek5{
+	left:720px;}
+	
+	
+/*Podesavanje naslova prve sekcije u drugoj kutiji */	
+#naslov{width:530px;
+height:70px;
+background:url(../slike/naslov.jpg);
+border-radius:15px;
+}
+
+
+/*Podesavanje naslova drue sekcije u drugoj kutiji */
+#naslov2{width:530px;
+height:70px;
+background:url(../slike/naslov.jpg);
+border-radius:15px;}
+
+
+
+/*Pozicioniranje naslova h2  */
+h2{ text-align:center;
+	color:white;
+	padding-top:15px;}
+
+
+
+/*Podesavanje slike tj treceg banera ispod sekcija u drugoj kutiji*/		
+#ban2{ width:1210px;
+height:370px;}
+
+
+
+/*Podesavanje desnog div-a*/	
+.des{
+	position:relative;
+	float:right;
+	width:790px;
+	clear:both;
+	height:500px;
+	}
+	
+	
+	
+/*Podesavanje levog div-a*/	
+.lev{ 
+position:relative;
+width:860px;
+clear:both;
+padding:15px;
+top:-30px;
+}	
+
+
+/*Podesavanje slicice ispod levog diva*/	
+#okvir{
+	position:relative;
+	left:-40px;
+	width:820px;
+	height:140px;
+	}
+	
+	
+/*Podesavanje slicice ispod desnog diva*/	
+#okvir1{
+	position:relative;
+	left:-40px;
+	top:-50px;
+	width:820px;
+	height:140px;
+	}	
+	
+
+
+/*Grupno Podesavanje slika kod levog diva*/
+.lev img{
+	width:300px;
+	height:300px;
+	margin-top:-50px;
+	}
+
+
+
+/*Grupno Podesavanje slika kod desnog diva*/	
+.des img{
+	width:230px;
+	height:380px;
+	}
+	
+	
+	
+/*Podesavanje naslova kod desnog diva*/
+#pristup{margin-top:-20px;
+	text-align:center;}
+	
+
+
+
+/*Podesavanje naslova kod levog diva*/	
+#pristup1{
+	text-align:left;}
+
+
+
+
+/*Podesavanje teksta kod desnog diva*/
+.des pre{font-family:Tahoma, Geneva, sans-serif;
+font-size:20px;
+}
+
+
+
+/*Podesavanje teksta kod levog diva*/
+.lev pre{font-family:Tahoma, Geneva, sans-serif;
+font-size:20px;}
+
+
+
+/*Podesavanja celog diva koji sadrzi dva leva i desni div  */
+.kutija4{
+	padding:0;
+	margin:0;
+height:1400px;
+}
+	
+
+
+	
+/*Podesavanje slike tj poslednjeg-cetvrtog banera ispod leve i desne sekcije u kutiji4 */	
+#ban3{margin-top:-20px;
+width:1210px;}
+	
+	
+	
+	
+/*Podesavanja sledeceg treceg po redu div-a koje sadrze dve sekcije!  */	
+.kutija3{
+	padding:5px;
+	width:1200px;
+height:260px;
+ }
+
+
+
+/*Podesavanja dimenizija i izgleda obe sekcije u kutiji3 poslednjoj po redu! */
+.sekcija3{ 
+position:absolute;
+box-shadow: 0px 0px 15px blue;
+border-radius:15px;
+width:530px;
+height:240px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:20px;}
+
+
+/*Pozicioniranje sekcije jedan u poslednjoj kutiji*/
+#sek6{
+	left:80px;}
+
+
+
+/*Pozicioniranje sekcije dva u poslednjoj kutiji*/	
+#sek7{
+	left:720px;}
+
+
+
+/*Pozicioniranje naslova u sekcijama u poslednjoj kutiji*/	
+.sekcija3 h3{
+	text-align:left;
+	margin-left:130px;}	
+	
+	
+
+/*Pozicioniranje i podesavanje slika u sekcijama u poslednjoj kutiji*/
+.sekcija3 img{
+	margin-top:-100px;
+	height:100px;
+	width:100px; }
+	
+
+/*Opste Podesavanje svih dugmica na ovoj strani*/
+
+.dugme{
+	text-decoration:none;
+	padding-top:12px;
+	padding-right:5px;
+	float:right;
+	border-radius:15px;
+	box-shadow: 0px 0px 15px blue;
+	height:30px;
+	text-align:center;
+	width:100px;
+	background:url(../slike/naslov.jpg);
+	color:white;
+	margin-top:2px;
+	}
+}
+
+
+
+/*Stilizovanje menija, odnosno dugmeta, labele za meni!*/
+.show-menu {
+	cursor:pointer;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #666666;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Promena boje prilikom prelaska kursora reko dugmeta.*/
+.show-menu:hover{
+	color: #000000;
+	background: #0066FF;
+}
+
+/*Sakrivanje checkbox-a.*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Prikazivanje menija kada je nevidljivi checkbox cekiran!!!*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+													/*RESPONSIVE ZA TABLET!*/
+/*------------------------------------------------------------------------------------------------------------------------*/	
+	
+@media (min-width: 481px) and (max-width: 768px) {
+	body,div,p,ul,ol,li,dl,dt,img,form,pre{ margin:0;
+padding:0;
+border:0;
+}
+
+body{
+	text-align:center;
+	
+	}
+
+
+
+/*Dimenzije cele strane i Za heder.*/
+/*-------------------------------------------------------------------------*/
+#container{ height:4240px;}
+
+header{height:50px;
+background:#036;
+width:100%;
+z-index:10;
+position:fixed;
+}
+
+
+	
+	
+	/*Dimenzija strane i Dizajn boje iza prvog diva! */ /*-------------------------------------------------------------------------*/	
+#content {
+		
+		width:100%;
+		position:relative;
+		top:640px;
+		background:url(../slike/noise-bg.png);
+		height:3600px;
+		bottom:80px;
+		}
+
+	
+
+		
+/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo) - ODNOSNO, postavljanje dugmeta preko koga se pojavljuje meni na vrh stranice.*/
+ul {
+	position: static;
+	display: none;
+	bottom:100px;
+}
+
+	/*Postavljanje pune sirine menija!*/
+	ul li, li a {
+		width: 100%;
+	}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Sprecavanje teksta da se prelomi!*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Prikazivanje dugmeta "Navigacioni Meni"*/
+	.show-menu {
+		display:block;
+	}
+
+
+/*Podesavanje vezana za logo!*/
+#logo{
+	display:none;
+	position:relative;
+	width:50%;
+	height:100px;
+	margin-left:0px;
+	top:50px;
+}
+
+
+
+
+/*Podesavanje futera!*/
+.futer{ 
+		width:100%;
+	height:60px;
+	position:relative;
+	background: #036;
+	color:white;
+	text-align:center;
+}
+
+.futer p{ 
+position:relative;
+	top:25px;
+	font-size:1em;
+	right:20%;;}
+
+.slike img{ 
+position:relative;
+	bottom:5px;
+	height:40px;
+	left:20%;
+
+}
+
+
+
+/*Podesavanje bannera!*/
+#banner{
+	background:url(../slike/ban2.png);
+	background-size:cover;
+	width:100%;
+	height:540px;
+	position:fixed;
+	top:50px;
+	}
+	
+	
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvidiv{
+	margin-bottom:50px;
+	background-color:#FFFFFF;
+	width:90%;
+	padding:20px;
+	margin-left:20px;
+	border:2px solid #CCCCCC;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20px;
+	text-align:justify;
+	box-shadow: 0px 0px 15px black;
+}	
+
+
+/*Podesavanja prvog paragrafa! */
+#prvi{font-family:Tahoma, Geneva, sans-serif;
+font-size:16px;}
+
+
+
+/*Podesavanja naslova! */
+h1{ text-align:center;
+	color:#0099FF;}
+
+h3{ text-align:center;
+	color:#0099FF;}
+
+
+
+/*Podesavanja motoa na baneru! */
+#moto{
+	font-size:40px;
+	text-align:center;
+	color:white;
+	padding-top:30px;
+	padding-right:800px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+#moto2{
+	font-size:40px;
+	text-align:center;
+	color:white;
+	padding-top:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+#moto3{
+	font-size:40px;
+	text-align:center;
+	color:white;
+	padding-top:20px;
+	padding-left:500px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+
+
+
+/*Podesavanja div-a koje sadrze tri sekcije!  */
+.kutija{
+	padding:0px;
+	width:700px;
+height:410px;
+margin-left:-6px;
+ }	
+
+
+/*Podesavanja dimenizija i izgleda svake od tri sekcija! */	
+.sekcija{ 
+position:absolute;
+width:200px;
+height:420px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:16px;
+border-radius:15px;
+margin-top:-3px;
+box-shadow: 0px 0px 15px blue;
+text-align:center;
+}
+
+
+
+/*Pozicioniranje slika u sekcijama */
+.sekcija img{
+	margin-top:-20px;
+	margin-left:15px;
+	height:60px;
+	width:60px;}
+
+
+
+/*Podesavanje naslova u svim sekcijama u prvoj kutiji*/		
+.sekcija h3{
+	font-size:18px;
+	margin-top:5px;}
+	
+	
+	
+/*Pozicioniranje slike u prvoj sekciji*/	
+#sek1 img{
+	margin-top:-40px;}
+
+
+
+/*Pozicioniranje dugmeta u drugoj sekciji*/		
+#sek2 .dugme{ 
+margin-top:38px;}
+
+
+/*Pozicioniranje dugmeta u trecoj sekciji*/	
+#sek3 .dugme{ 
+margin-top:20px;}
+
+
+
+/*Pozicioniranje sekcije 2 u prvoj kutiji*/	
+#sek2{
+	left:268px;
+	}
+
+
+/*Pozicioniranje sekcije 3 u prvoj kutiji*/		
+#sek3{
+	left:500px;}
+	
+	
+
+/*Podesavanje slike tj drugog banera ispod sekcija*/
+#ban1{ width:675px;
+height:200px;}
+
+
+
+/*Podesavanja sledeceg drugog po redu div-a koje sadrze dve sekcije!  */
+.kutija2{
+	padding:5px;
+	width:700px;
+height:440px; }
+
+
+
+/*Podesavanja dimenizija i izgleda obe sekcije u sledecoj kutiji! */
+.sekcija2{ 
+position:absolute;
+border-radius:15px;
+width:300px;
+height:440px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:16px;
+}
+
+
+
+/*Pozicioniranje slike u prvoj sekciji u drugoj kutiji */
+#slik1{width:180px;
+height:220px;
+margin-left:70px;
+margin-top:-20px;  }
+
+
+
+/*Pozicioniranje slike u drugoj sekciji u drugoj kutiji */
+#slik2{ width:250px;
+height:200px;
+margin-left:30px;}
+
+
+/*Pozicioniranje prve sekcije u drugoj kutiji */	
+#sek4{
+	left:30px;}
+
+
+/*Pozicioniranje druge sekcije u drugoj kutiji */	
+#sek5{
+	left:380px;}
+
+
+
+/*Podesavanje naslova prve sekcije u drugoj kutiji */	
+#naslov{width:310px;
+height:50px;
+background:url(../slike/naslov.jpg);
+border-radius:15px;
+}
+
+
+/*Podesavanje naslova druge sekcije u drugoj kutiji */	
+#naslov2{width:310px;
+height:50px;
+background:url(../slike/naslov.jpg);
+border-radius:15px;}
+
+
+
+/*Pozicioniranje naslova h2  */
+h2{ text-align:center;
+	color:white;
+	padding-top:10px;}
+
+
+
+/*Podesavanje slike tj treceg banera ispod sekcija u drugoj kutiji*/		
+#ban2{ width:675px;
+height:270px;}
+
+
+
+/*Podesavanje desnog div-a*/
+.des{
+	position:relative;
+	float:right;
+	width:590px;
+	clear:both;
+	height:500px;
+	}
+
+
+
+/*Podesavanje levog div-a*/	
+.lev{ 
+position:relative;
+width:660px;
+clear:both;
+padding:15px;
+top:-30px;
+}	
+
+
+
+/*Podesavanje slicice ispod levog diva*/
+#okvir{
+	position:relative;
+	left:-40px;
+	width:620px;
+	height:140px;
+	}
+
+
+
+/*Podesavanje slicice ispod desnog diva*/	
+#okvir1{
+	position:relative;
+	left:-40px;
+	top:-50px;
+	width:620px;
+	height:140px;
+	}	
+	
+
+
+/*Grupno Podesavanje slika kod levog diva*/
+.lev img{
+	width:200px;
+	height:200px;
+	margin-top:-50px;
+	}
+	
+	
+	
+/*Grupno Podesavanje slika kod desnog diva*/	
+.des img{
+	width:150px;
+	height:300px;
+	}
+	
+	
+	
+/*Podesavanje naslova kod desnog diva*/	
+#pristup{margin-top:-10px;
+	text-align:right;
+	font-size:24px;}
+	
+	
+	
+/*Podesavanje naslova kod levog diva*/
+#pristup1{
+	text-align:left;
+	font-size:24px;}
+	
+	
+	
+	
+/*Podesavanje teksta kod desnog diva*/
+.des pre{font-family:Tahoma, Geneva, sans-serif;
+font-size:16px;
+}
+
+
+
+
+/*Podesavanje teksta kod levog diva*/
+.lev pre{font-family:Tahoma, Geneva, sans-serif;
+font-size:16px;}
+
+
+
+
+/*Podesavanja celog diva koji sadrzi dva leva i desni div  */
+.kutija4{
+	padding:0;
+	margin:0;
+height:1400px;
+}
+	
+
+
+/*Podesavanje slike tj poslednjeg-cetvrtog banera ispod leve i desne sekcije u kutiji4 */		
+#ban3{margin-top:-300px;
+	width:675px;}
+	
+	
+	
+/*Podesavanja sledeceg treceg po redu div-a koje sadrze dve sekcije!  */	
+.kutija3{
+	padding:5px;
+	width:700px;
+height:260px;
+ }
+
+
+
+/*Podesavanja dimenizija i izgleda obe sekcije u kutiji3 poslednjoj po redu! */
+.sekcija3{ 
+position:absolute;
+box-shadow: 0px 0px 15px blue;
+border-radius:15px;
+width:300px;
+height:240px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:16px;}
+
+
+
+/*Pozicioniranje sekcije jedan u poslednjoj kutiji*/
+#sek6{
+	left:40px;}
+	
+	
+	
+/*Pozicioniranje sekcije dva u poslednjoj kutiji*/	
+#sek7{
+	left:390px;}
+	
+	
+	
+/*Pozicioniranje naslova u sekcijama u poslednjoj kutiji*/
+.sekcija3 h3{
+	font-size:20px;
+	text-align:left;
+	margin-left:110px;}	
+	
+	
+	
+/*Pozicioniranje i podesavanje slika u sekcijama u poslednjoj kutiji*/	
+.sekcija3 img{
+	margin-top:-100px;
+	height:70px;
+	width:70px; }
+	
+	
+	
+/*Dodatno Pozicioniranje dugmeta u drugoj sekciji u poslednjoj kutiji*/	
+#sek7 .dugme{
+	margin-top:23px;}
+
+
+
+
+/*Opste Podesavanje svih dugmica na ovoj strani*/
+.dugme{
+	text-decoration:none;
+	padding-top:12px;
+	padding-right:5px;
+	float:right;
+	border-radius:15px;
+	box-shadow: 0px 0px 15px blue;
+	height:30px;
+	text-align:center;
+	width:100px;
+	background:url(../slike/naslov.jpg);
+	color:white;
+	margin-top:2px;
+	}
+	}
+	
+/*RESPONSIVE ZA MOBILNI TELEFON!!!*/	
+	
+	
+	
+@media (max-width: 481px) {
+		body,div,p,ul,ol,li,dl,dt,img,form,pre{ margin:0;
+padding:0;
+border:0;
+}
+
+body{
+	text-align:center;
+	
+	}
+
+
+/*Dimenzije cele strane i Za heder.*/
+/*-------------------------------------------------------------------------*/
+#container{ height:3910px;}
+
+header{ height:50px;
+background:#036;
+width:100%;
+z-index:10;
+position:fixed;
+}
+
+
+
+	/*Dimenzija strane i Dizajn boje iza prvog diva! */ /*-------------------------------------------------------------------------*/
+#content {
+		
+		width:100%;
+		position:relative;
+		top:640px;
+		background:white;
+		height:3300px;
+		bottom:50px;
+		}
+
+		
+/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo) - ODNOSNO, postavljanje dugmeta preko koga se pojavljuje meni na vrh stranice.*/
+ul {
+	position: static;
+	display: none;
+	bottom:100px;
+}
+
+	/*Postavljanje pune sirine menija!*/
+	ul li, li a {
+		width: 100%;
+	}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Sprecavanje teksta da se prelomi!*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Prikazivanje dugmeta "Navigacioni Meni"*/
+	.show-menu {
+		display:block;
+	}
+
+
+
+
+/*Podesavanja vezana za logo!*/
+#logo{ 
+	display: none;
+	position:relative;
+	width:300px;
+	height:100px;
+	margin-left:0px;
+	top:50px;
+}
+
+
+
+
+/*Podesavanje futera!*/
+.futer{ 
+bottom:0px;
+	height:60px;
+	position:relative;
+	background: #036;
+	color:white;
+}
+
+.futer p{ 
+position:relative;
+	font-size:14px;
+	top:25px;}
+
+.slike img{ 
+display:none; 
+	position:relative;
+	left:150px;
+	bottom:5px;
+	height:40px;
+	padding-left:15px;
+}
+
+
+
+/*Podesavanje bannera!*/
+#banner{
+	background:url(../slike/ban2er.png);
+	background-size:cover;
+	width:100%;
+	height:540px;
+	position:fixed;
+	top:50px;
+	}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvidiv{
+	margin-bottom:50px;
+	background-color:#FFFFFF;
+	padding:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20px;
+	text-align:justify;
+}	
+
+
+
+
+/*Podesavanja prvog paragrafa! */
+#prvi{font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;}
+
+
+
+
+/*Podesavanja naslova! */
+h1{ text-align:center;
+	color:#0099FF;}
+
+h3{ text-align:center;
+	color:#0099FF;}
+
+
+
+
+/*Podesavanja motoa na baneru! */
+#moto{
+	font-size:28px;
+	text-align:center;
+	color:white;
+	padding-top:30px;
+	padding-right:800px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+#moto2{
+	font-size:28px;
+	text-align:center;
+	color:white;
+	padding-top:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+#moto3{
+	font-size:28px;
+	text-align:center;
+	color:white;
+	padding-top:20px;
+	padding-left:290px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-shadow:2px 4px #666;}
+
+
+
+
+/*Podesavanja div-a koje sadrze tri sekcije!  */
+.kutija{
+	padding:0px;
+	width:400px;
+height:650px;
+margin-left:-6px;
+ }	
+	
+	
+	
+	
+/*Podesavanja dimenizija i izgleda svake od tri sekcija! */		
+.sekcija{ 
+position:absolute;
+width:160px;
+height:375px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;
+border-radius:15px;
+margin-top:-3px;
+box-shadow: 0px 0px 15px blue;
+text-align:center;
+}
+
+
+
+/*Pozicioniranje slika u sekcijama */
+.sekcija img{
+	margin-top:-10px;
+	margin-left:15px;
+	height:40px;
+	width:40px;}
+	
+	
+	
+/*Podesavanje naslova h3 u svim sekcijama u prvoj kutiji*/		
+.sekcija h3{
+	font-size:15px;
+	margin-top:5px;}
+	
+	
+	
+/*Pozicioniranje slike u prvoj sekciji*/		
+#sek1 img{
+	margin-top:-40px;}
+	
+	
+	
+/*Pozicioniranje dugmeta u prvoj sekciji*/		
+#sek1 .dugme{ 
+margin-top:20px;
+}
+
+
+
+/*Pozicioniranje dugmeta u drugoj sekciji*/	
+#sek2 .dugme{ 
+margin-top:5px;
+}
+
+
+
+/*Pozicioniranje dugmeta u trecoj sekciji*/	
+#sek3 .dugme{ 
+margin-top:-13px;}
+
+
+
+
+/*Pozicioniranje druge sekcije u prvoj kutiji*/	
+#sek2{
+	left:235px;
+	}
+
+
+
+/*Pozicioniranje trece sekcije u prvoj kutiji*/		
+#sek3{
+	margin-top:410px;
+	left:40px;
+	width:350px;
+	height:200px;}
+
+
+
+
+/*Podesavanje slike tj drugog banera ispod sekcija*/
+#ban1{ width:405px;
+height:100px;}
+
+
+
+/*Podesavanja sledeceg drugog po redu div-a koje sadrze dve sekcije!  */
+.kutija2{
+	padding:5px;
+	width:400px;
+height:400px; }
+
+
+
+
+/*Podesavanja dimenizija i izgleda obe sekcije u sledecoj kutiji! */
+.sekcija2{ 
+position:absolute;
+border-radius:15px;
+width:180px;
+height:440px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;
+text-align:center;
+}
+
+
+
+
+/*Pozicioniranje slike u prvoj sekciji u drugoj kutiji */
+#slik1{width:120px;
+height:150px;
+margin-left:10px;
+margin-top:-10px;  }
+
+
+
+/*Pozicioniranje slike u drugoj sekciji u drugoj kutiji */
+#slik2{ width:180px;
+height:130px;
+margin-left:0px;}
+	
+	
+	
+/*Pozicioniranje prve sekcije u drugoj kutiji */
+#sek4{
+	left:30px;}
+	
+	
+/*Pozicioniranje druge sekcije u drugoj kutiji */	
+#sek5{
+	left:230px;}
+	
+	
+	
+/*Podesavanje naslova prve sekcije u drugoj kutiji */	
+#naslov{width:180px;
+height:50px;
+background:url(../slike/naslov.jpg);
+border-radius:15px;
+}
+
+
+
+/*Podesavanje naslova druge sekcije u drugoj kutiji */	
+#naslov2{width:180px;
+height:50px;
+background:url(../slike/naslov.jpg);
+border-radius:15px;}
+
+
+
+
+/*Pozicioniranje naslova h2  */
+h2{ text-align:center;
+	color:white;
+	padding-top:10px;
+	font-size:18px;}
+	
+	
+	
+	
+/*Podesavanje slike tj treceg banera ispod sekcija u drugoj kutiji*/	
+#ban2{ width:405px;
+height:170px;}
+
+
+
+
+
+/*Podesavanje desnog div-a*/
+.des{
+	position:relative;
+	width:370px;
+	clear:both;
+	height:350px;
+	font-size:14px;
+	margin-top:40px;
+	}
+	
+	
+/*Podesavanje levog div-a*/
+.lev{ 
+position:relative;
+width:350px;
+clear:both;
+padding:15px;
+top:-30px;
+font-size:14px;
+height:300px;
+}	
+
+
+
+
+/*Podesavanje slicice ispod levog diva*/
+#okvir{
+	position:relative;
+	left:-30px;
+	width:390px;
+	height:120px;
+	top:-40px;
+	}
+	
+	
+	
+	
+/*Podesavanje slicice ispod desnog diva*/
+#okvir1{
+	position:relative;
+	left:-20px;
+	top:-70px;
+	width:390px;
+	height:120px;
+	}	
+	
+
+
+/*Podesavanje naslova kod desnog diva*/	
+#pristup{margin-top:-10px;
+	text-align:right;
+	font-size:24px;}
+	
+	
+	
+/*Podesavanje naslova kod levog diva*/		
+#pristup1{
+	text-align:left;
+	font-size:24px;}
+	
+	
+	
+	
+/*Podesavanje teksta kod desnog diva*/	
+.des pre{font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;
+}
+
+
+
+
+/*Podesavanje teksta kod levog diva*/
+.lev pre{font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;}
+
+
+
+/*Podesavanje da se ne vide slike za mobilni u ovim sekcijama*/
+.mob{
+	display:none;}
+
+
+
+/*Podesavanja celog diva koji sadrzi dva leva i desni div  */
+.kutija4{
+	padding:0;
+	margin:0;
+height:1000px;
+}
+	
+	
+	
+/*Podesavanje slike tj poslednjeg-cetvrtog banera ispod leve i desne sekcije u kutiji4 */				
+#ban3{margin-top:0px;
+	width:405px;}
+
+	
+	
+/*Podesavanja sledeceg treceg po redu div-a koje sadrze dve sekcije!  */
+.kutija3{
+	padding:0px;
+	width:350px;
+height:260px;
+ }
+
+
+
+/*Podesavanja dimenizija i izgleda obe sekcije u kutiji3 poslednjoj po redu! */
+.sekcija3{ 
+position:absolute;
+box-shadow: 0px 0px 15px blue;
+border-radius:15px;
+width:165px;
+height:200px;
+padding:10px;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:14px;
+}
+
+
+/*Pozicioniranje sekcije jedan u poslednjoj kutiji*/
+#sek6{
+	left:35px;}
+
+
+
+/*Pozicioniranje sekcije dva u poslednjoj kutiji*/	
+#sek7{
+	left:235px;}
+
+
+
+/*Pozicioniranje naslova u sekcijama u poslednjoj kutiji*/	
+.sekcija3 h3{
+	font-size:16px;
+	text-align:left;
+	margin-left:80px;}	
+	
+	
+	
+/*Pozicioniranje i podesavanje slika u sekcijama u poslednjoj kutiji*/	
+.sekcija3 img{
+	margin-top:-60px;
+	height:50px;
+	width:50px; }
+	
+	
+	
+/*Dodatno Pozicioniranje dugmeta u drugoj sekciji u poslednjoj kutiji*/	
+#sek7 .dugme{
+	margin-top:0px;}
+	
+	
+	
+/*Dodatno Pozicioniranje slike u drugoj sekciji u poslednjoj kutiji*/	
+#sek7 img{
+	position:absolute;
+	padding-top:0px;}
+
+
+
+/*Opste Podesavanje svih dugmica na ovoj strani*/
+.dugme{
+	text-decoration:none;
+	padding-top:5px;
+	padding-down:5px;
+	padding-right:5px;
+	float:right;
+	border-radius:10px;
+	box-shadow: 0px 0px 15px blue;
+	height:25px;
+	text-align:center;
+	width:60px;
+	background:url(../slike/naslov.jpg);
+	color:white;
+	margin-top:2px;
+	}
+	
+}

@@ -1,0 +1,1110 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+													/*RESPONSIVE ZA DESKTOP!*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 2000px){
+
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*Dimenzije cele strane. Za futer!*/
+
+#container{
+	height:100%;
+	width:100%;
+}
+
+header{ 
+	height:110px;
+	background: #036;
+	width:100%;
+	z-index:10;
+	position:fixed;
+}
+
+	/*Dimenzije boje iza prvog diva!*//*-------------------------------------------------------------------------*/
+
+#content {
+	width:100%;
+	position:relative;
+	padding-top:100px;
+	background:url(../slike/noise-bg.png);
+	height:100%;
+}
+	/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo)*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	/*Centrirano*/
+	margin-left:20%;
+	margin-top:4%;
+}
+
+/*Pravljenje horizontalne liste sa razmacima*/
+li {
+	display:inline-block;
+	float: left;
+}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family:Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno, kao i podesavanje njegove velicine (duzina, sirina,...)*/
+li ul li {
+	display: block;
+	float: none;
+	position:relative;
+	right:168px;
+	bottom:34px;
+}
+
+/*Sprecavanje teksta da se prelomi*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Podesavanje logoa!*/
+#logo{ 
+	position:absolute;
+	width:25%;
+	height:85%;
+	bottom:35px;
+	left:40%;
+}
+
+/*Podesavanje futera!*/
+.futer{ 
+	position:relative;
+	bottom:0px;
+	height:60px;
+	width:100%;
+	background: #036;
+	color:white;
+	text-align:center;
+}
+
+.futer p{ 
+	position:relative;
+	top:25px;
+	margin-left:-150px;
+}
+
+.slike img{ 
+	position:relative;
+	left:170px;
+	bottom:5px;
+	height:40px;
+	padding-left:15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvidiv{
+	height:100%;
+	width:90%;
+	top:5%;
+	margin-bottom:10%;
+	position:relative;
+	left:3.5%;
+	background-color:#FFFFFF;
+	padding:20px;
+	border:2px solid #CCCCCC;
+	box-shadow: 0px 0px 15px black;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20px;
+	text-align:justify;
+}
+
+.sat{
+	position:absolute;
+	margin-right:30%;
+	top:35px;}
+
+
+.plavaboja{
+	color:#0099FF;
+}
+
+strong{
+	color:#0099FF;
+}
+
+.prvaslika{
+	width:100%;
+	height:50%;
+}
+
+.lista{
+	position:relative;
+	margin-left:170px;
+}
+
+.video{
+	border-radius:35px;
+	width:80%;
+	height:450px;
+	position:relative;
+	left:10%;
+}
+
+.drugaslika{
+	height:300px;
+	width:100%;
+}
+
+/*Prva lista - MS SharePoint 2010 noviteti--------------------------------------------------------------------------------*/
+
+#accordion1 {
+	margin-top:30px;
+	margin-bottom:20px;
+	width: 100%;
+	text-align:center;
+	border-radius:25px;
+	cursor:pointer;
+}
+
+.naslovi{
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovi:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.poslednjinaslov{
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.poslednjinaslov:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.sadrzaji1{
+	background:url(../slike/012.jpg);
+	color:white;
+	padding:30px;
+	border-bottom:1px solid #0099FF;
+	border-left:1px solid #0099FF;
+	border-right:1px solid #0099FF;
+}
+
+.poslednjisadrzaj{
+	background-color:#00CCFF;
+	color:white;
+	padding:30px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.trecaslika{
+	width:100%;
+	height:450px;
+}
+
+/*Druga lista - MS SharePoint 2016 noviteti-------------------------------------------------------------------------------*/
+
+#accordion {
+	width: 100%;
+	text-align:center;
+	border-radius:25px;
+	cursor:pointer;
+}
+
+.naslovonedrive{
+	background:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovonedrive:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.naslovpretraga1{
+	background: #0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovpretraga1:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.naslovpretraga2{
+	background: #0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovpretraga2:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.naslovskype{
+	background:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovskype:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+#krivogore{
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+}
+
+#krivodole{
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.sadrzaji{
+	background:url(../slike/012.jpg);
+	color:white;
+	padding:10px;
+	border-bottom:1px solid #0099FF;
+	border-left:1px solid #0099FF;
+	border-right:1px solid #0099FF;
+}
+
+#poslednjisadrzaj{
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+h4{
+	font-weight:normal;
+}
+}
+
+
+/*Stilizovanje menija, odnosno dugmeta, labele za meni!*/
+.show-menu {
+	cursor:pointer;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #666666;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Promena boje prilikom prelaska kursora reko dugmeta.*/
+.show-menu:hover{
+	color: #000000;
+	background: #0066FF;
+}
+
+/*Sakrivanje checkbox-a.*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Prikazivanje menija kada je nevidljivi checkbox cekiran!!!*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+													/*RESPONSIVE ZA TABLET!*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*Dimenzije cele strane. Za futer!*/
+
+#container{
+	height:100%;
+	width:100%;
+}
+
+header{ 
+	height:50px;
+	background: #036;
+	width:100%;
+	z-index:10;
+	position:relative;
+}
+
+/*Dimenzije za pozadinu iza prvog diva.*/
+
+#content {
+		width:100%;
+		position:relative;
+		top:0px;
+		background:url(../slike/noise-bg.png);
+		bottom:80%;
+		height:100%;
+}
+	
+	/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo) - ODNOSNO, postavljanje dugmeta preko koga se pojavljuje meni na vrh stranice.*/
+ul {
+	position: static;
+	display: none;
+	bottom:100px;
+}
+
+	/*Postavljanje pune sirine menija!*/
+	ul li, li a {
+		width: 100%;
+	}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Sprecavanje teksta da se prelomi!*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Prikazivanje dugmeta "Navigacioni Meni"*/
+	.show-menu {
+		display:block;
+	}
+
+#logo{
+	display:none;
+	position:relative;
+	width:50%;
+	height:100px;
+	margin-left:0px;
+	top:50px;
+}
+
+.futer{ 
+	bottom:0px;
+	height:60px;
+	position:relative;
+	background: #036;
+	color:white;
+}
+
+.futer p{ 
+	position:relative;
+	top:25px;
+}
+
+.slike img{ 
+	position:relative;
+	bottom:5px;
+	height:40px;
+	left:50%;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvidiv{
+	height:100%;
+	background-color:#FFFFFF;
+	width:85%;
+	padding:20px;
+	top:5%;
+	margin-bottom:10%;
+	position:relative;
+	left:5%;
+	border:1px solid #CCCCCC;
+	box-shadow: 0px 0px 10px #000000;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	text-align:justify;
+}
+
+.sat{
+	display:none;
+	position:absolute;
+	margin-right:30%;
+	top:35px;}
+
+
+.plavaboja{
+	color:#0099FF;
+	text-align:center;
+}
+
+strong{
+	color:#0099FF;
+}
+
+.prvaslika{
+	position:relative;
+	width:100%;
+	height:300px;
+}
+
+.pozadinazatekst{
+	box-shadow:0px 0px 15px black;
+	border-radius:15px;
+	border:1px solid #CCCCCC;
+	background-color: #00CCFF;
+	padding:20px;
+	position:relative;
+	top:10px;
+}
+
+.lista{
+	position:relative;
+	padding-left:15px;
+	width:100%;
+}
+
+.video{
+	border-radius:35px;
+	box-shadow:0px 0px 15px black;
+	height:275px;
+	width:100%;
+}
+
+.drugaslika{
+	width:100%;
+	height:200px;
+	border-radius:35px;
+	box-shadow:0px 0px 15px black;
+}
+
+/*Prva lista - MS SharePoint 2010 noviteti ACCORDION1*/
+
+#accordion1 {
+	margin-top:30px;
+	margin-bottom:20px;
+	width: 100%;
+	text-align:center;
+	box-shadow:0px 0px 15px black;
+	border-radius:25px;
+	cursor:pointer;
+}
+
+.naslovi{
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovi:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.poslednjinaslov{
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.poslednjinaslov:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.sadrzaji1{
+	background:url(../slike/012.jpg);
+	color:white;
+	padding:15px;
+	border-bottom:1px solid #0099FF;
+	border-left:1px solid #0099FF;
+	border-right:1px solid #0099FF;
+}
+
+.poslednjisadrzaj{
+	background-color:#00CCFF;
+	color:white;
+	padding:15px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.trecaslika{
+	width:100%;
+	height:250px;
+}
+
+	/*Druga lista - MS SharePoint 2016 noviteti - ACCORDION*/
+
+#accordion {
+	margin-top:30px;
+	width: 100%;
+	position:relative;
+	text-align:center;
+	box-shadow:0px 0px 15px black;
+	border-radius:25px;
+	cursor:pointer;
+}
+
+.naslovonedrive{
+	background:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovonedrive:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.naslovpretraga1{
+	background: #0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovpretraga1:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.naslovpretraga2{
+	background: #0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovpretraga2:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.naslovskype{
+	background:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovskype:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+#krivogore{
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+}
+
+#krivodole{
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.sadrzaji{
+	background:url(../slike/012.jpg);
+	color:white;
+	padding:15px;
+	border-bottom:1px solid #0099FF;
+	border-left:1px solid #0099FF;
+	border-right:1px solid #0099FF;
+}
+
+#poslednjisadrzaj{
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+h4{
+	font-weight:normal;
+}
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+													/*RESPONSIVE ZA MOBILNI!*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 200px) and (max-width: 480px){
+
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+#container{
+	height: 100%;
+	width:100%;
+}
+
+header{ 
+	height:50px;
+	background: #036;
+	width:100%;
+	z-index:10;
+	position:relative;
+}
+	
+#content {		
+	width:100%;
+	position:relative;
+	top:0px;
+	background: #FFFFFF;
+	bottom:80%;
+	padding-bottom:20px;
+	height:100%;
+}
+		
+	/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo) - ODNOSNO, postavljanje dugmeta preko koga se pojavljuje meni na vrh stranice.*/
+ul {
+	position: static;
+	display: none;
+	bottom:100px;
+}
+
+	/*Postavljanje pune sirine menija!*/
+	ul li, li a {
+		width: 100%;
+	}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Sprecavanje teksta da se prelomi!*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Prikazivanje dugmeta "Navigacioni Meni"*/
+	.show-menu {
+		display:block;
+	}
+
+#logo{ 
+	display: none;
+	position:relative;
+	width:300px;
+	height:100px;
+	margin-left:0px;
+	top:50px;
+}
+
+
+.futer{ 
+	height:60px;
+	position:relative;
+	background: #036;
+	color:white;
+}
+
+.futer p{ 
+	position:relative;
+	font-size:14px;
+	top:25px;
+}
+
+.slike img{
+	display:none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvidiv{
+	height:99% auto;
+	background-color:#FFFFFF;
+	padding-left:20px;
+	padding-right:20px;
+	position:relative;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	text-align:justify;
+}
+
+.sat{
+	display:none;
+	position:absolute;
+	margin-right:30%;
+	top:35px;}
+
+.plavaboja{
+	color:#0099FF;
+	text-align:center;
+}
+
+strong{
+	color:#0099FF;
+}
+
+.prvaslika{
+	position:relative;
+	width:100%;
+	height:150px;
+}
+
+.pozadinazatekst{
+	display:none;
+	box-shadow:0px 0px 15px black;
+	border-radius:15px;
+	border:1px solid #CCCCCC;
+	background-color: #00CCFF;
+	padding:20px;
+	position:relative;
+	top:10px;
+}
+
+.lista{
+	position:relative;
+	left:10%;
+	width:85%;
+}
+
+.video{
+	border-radius:15px;
+	box-shadow:0px 0px 15px black;
+	height:5%;
+	width:100%;
+}
+
+.drugaslika{
+	width:100%;
+	height:100px;
+	border-radius:15px;
+	box-shadow:0px 0px 10px black;
+}
+
+/*Prva lista - MS SharePoint 2010 noviteti ACCORDION1*/
+
+#accordion1 {
+	width: 100%;
+	margin-top:20px;
+	text-align:center;
+	box-shadow:0px 0px 15px black;
+	border-radius:15px;
+	cursor:pointer;
+}
+
+.naslovi{
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovi:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+}
+
+.poslednjinaslov{
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+}
+
+.poslednjinaslov:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+}
+
+.sadrzaji1{
+	background:url(../slike/012.jpg);
+	color:white;
+	padding:15px;
+	border-bottom:1px solid #0099FF;
+	border-left:1px solid #0099FF;
+	border-right:1px solid #0099FF;
+}
+
+.poslednjisadrzaj{
+	background-color:#00CCFF;
+	color:white;
+	padding:15px;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+}
+
+.trecaslika{
+	position:relative;
+	width:100%;
+}
+
+/*Druga lista - MS SharePoint 2016 noviteti - ACCORDION*/
+
+#accordion {
+	width: 100%;
+	position:relative;
+	text-align:center;
+	box-shadow:0px 0px 15px black;
+	border-radius:15px;
+	cursor:pointer;
+}
+
+.naslovonedrive{
+	background:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovonedrive:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+}
+
+.naslovpretraga1{
+	background: #0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovpretraga1:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+}
+
+.naslovpretraga2{
+	background: #0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovpretraga2:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+}
+
+.naslovskype{
+	background:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+}
+
+.naslovskype:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+}
+
+#krivogore{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+}
+
+#krivodole{
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+}
+
+.sadrzaji{
+	background:url(../slike/012.jpg);
+	color:white;
+	padding:15px;
+	border-bottom:1px solid #0099FF;
+	border-left:1px solid #0099FF;
+	border-right:1px solid #0099FF;
+}
+
+#poslednjisadrzaj{
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+}
+
+h4{
+	font-weight:normal;
+}
+}

@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body,div,h1,h2,h3,h4,h5,h6,p,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*Dimenzije cele strane. Za futer!*/
+
+#container{
+	height:100%;
+	width:100%;
+}
+
+header{ 
+	height:110px;
+	background: #036;
+	width:100%;
+	z-index:10;
+	position:fixed;
+}
+
+	/*Dimenzije boje iza prvog diva!*//*-------------------------------------------------------------------------*/
+
+#content {
+	width:100%;
+	position:relative;
+	padding-top:100px;
+	background:url(../slike/noise-bg.png);
+	height:100%;
+}
+
+
+
+/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo)*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	/*Centrirano*/
+	margin-left:20%;
+	margin-top:4%;
+}
+
+/*Pravljenje horizontalne liste sa razmacima*/
+li {
+	display:inline-block;
+	float: left;
+}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family:Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno, kao i podesavanje njegove velicine (duzina, sirina,...)*/
+li ul li {
+	display: block;
+	float: none;
+	position:relative;
+	right:168px;
+	bottom:34px;
+}
+
+/*Sprecavanje teksta da se prelomi*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Podesavanje logoa!*/
+#logo{ 
+	position:absolute;
+	width:25%;
+	height:85%;
+	bottom:35px;
+	left:40%;
+}
+
+/*Podesavanje logoa!*/
+#logo{ 
+	position:absolute;
+	width:25%;
+	height:85%;
+	bottom:35px;
+	left:40%;
+}
+
+/*Podesavanje futera!*/
+.futer{ 
+	position:relative;
+	bottom:0px;
+	height:60px;
+	width:100%;
+	background: #036;
+	color:white;
+	text-align:center;
+}
+
+.futer p{ 
+	position:relative;
+	top:25px;
+	margin-left:-150px;
+}
+
+.slike img{ 
+	position:relative;
+	left:170px;
+	bottom:5px;
+	height:40px;
+	padding-left:15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+.prvinaslov{
+	color:#0099FF;
+	text-align:center;
+}
+strong{
+	color:#0099FF;
+}
+
+.prvidiv{
+	margin-bottom:50px;
+	background:#FFFFFF;
+	width:90%;
+	padding:20px;
+	margin-left:50px;
+	border:2px solid #CCCCCC;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:22px;
+	text-align:justify;
+}
+
+.sat{
+	position:absolute;
+	margin-right:30%;
+	top:35px;}
+
+.prvinaslov{
+	color:#0099FF;
+	text-align:center;
+}
+
+#mso {
+	position:relative;
+	left:300px;
+	border:5px solid black;
+	width:600px;}
+
+#accordion1 {
+	position:relative;
+	margin-top:30px;
+	margin-bottom:20px;
+	width: 100%;
+	text-align:center;
+	border-radius:25px;
+	cursor:pointer;
+}
+
+.naslovi{
+	position:relative;
+	background-color:#0066FF;
+	color:#FFFFFF;
+	height:30px;
+	padding:15px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.naslovi:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+#krivogore{
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+}
+
+#krivodole{
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.sadrzaj1{
+	color:black;
+	height:100% auto;
+	padding:15px;
+	border-bottom:2px solid #0099FF;
+	border-left:2px solid #0099FF;
+	border-right:2px solid #0099FF;
+}
+
+
+
+.poslednjisadrzaj{
+	background-color:white;
+	color:black;
+	padding:15px;
+	border-left:2px solid #0099FF;
+	border-right:2px solid #0099FF;
+	border-bottom:2px solid #0099FF;
+}
+
+.poslednjinaslov{
+	text-align:center;
+	background-color:#0066FF;
+	color:white;
+	height:30px;
+	padding:15px;
+}
+
+.poslednjinaslov:hover{
+	background:#0099FF;
+	color: #FFFFFF;
+	font-weight:bold;
+	cursor:pointer;}
+
+
+.divzaonline{
+	width: 50% auto;
+	height:350px;
+	border:1px solid #0033FF;
+	border-radius:15px;
+	background-color:#CCCCCC;
+	color:#0099FF;
+}
+
+#ms16 {
+	position:relative;
+	margin-left:85px;
+	width:85%;
+	border:5px solid black;}
+	
+.lista{
+	position:relative;
+	right:300px;}
+	
+.a {
+	position:relative;
+	margin-left:30px;
+	font-size:24px;
+	color:#379BFF;
+	font-weight:bold;}
+
+#b {
+	margin-top:10px;
+	margin-left:50px;}
+.b {
+	margin-left:50px;
+	}
+.c {
+	margin-left:80px;}
+
+	
+.prvaslika {
+	position:relative;
+	width:70%;
+	margin-left:175px;
+	border:1px solid black;}
+
+.drugaslika {
+	position:relative;
+	width:60%;
+	margin-left:250px;
+	border:1px solid black;}
+
+.trecaslika {
+	position:relative;
+	width:60%;
+	margin-left:250px;
+	border:1px solid black;}
+
+.cetvrtaslika {
+	position:relative;
+	width:60%;
+	margin-left:250px;
+	border:1px solid black;}
+
+.petaslika {
+	width:95%;
+	margin-left:30px;
+	border:1px solid black;}
+
+.sestaslika {
+	width:95%;
+	margin-left:30px;
+	border:1px solid black;}
+
+.sedmaslika {
+	width:32%;
+	margin-left:20px;
+	border:1px solid black;}
+
+.osmaslika {
+	width:32%;
+	margin-left:5px;
+	border:1px solid black;}
+
+.devetaslika {
+	width:31%;
+	margin-left:5px;
+	border:1px solid black;
+	margin-bottom:120px;}
+
+.desetaslika {
+	width:95%;
+	margin-left:30px;
+	border:1px solid black;}
+
+.jedanaestaslika {
+	width:80%;
+	margin-left:120px;
+	border:1px solid black;}
+
+.dvanaestaslika {
+	width:38%;
+	margin-left:710px;
+	margin-top:-220px;
+	border:1px solid black;}
+
+.trinaestaslika {
+	width:50%;
+	margin-left:20px;
+	border:1px solid black;}
+
+.cetrnaestaslika {
+	width:45%;
+	margin-left:5px;
+	margin-bottom:300px;
+	border:1px solid black;}
+	
+.petnaestaslika {
+	width:95%;
+	margin-left:30px;
+	border:1px solid black;}
+
+.sesnaestaslika {
+	width:95%;
+	margin-left:30px;
+	border:1px solid black;}
+
+.sedamnaestaslika {
+	width:60%;
+	margin-left:220px;
+	border:1px solid black;}
+
+.osamnaestaslika {
+	width:95%;
+	margin-left:30px;
+	border:1px solid black;}
+
+.devetnaestaslika {
+	width:49%;
+	margin-left:20px;
+	border:1px solid black;}
+
+.dvadesetaslika {
+	width:46%;
+	margin-left:5px;
+	border:1px solid black;}
+
+.dvadesetprvaslika {
+	width:60%;
+	margin-left:220px;
+	border:1px solid black;}
+	
+/*Stilizovanje menija, odnosno dugmeta, labele za meni!*/
+.show-menu {
+	cursor:pointer;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #666666;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Promena boje prilikom prelaska kursora reko dugmeta.*/
+.show-menu:hover{
+	color: #000000;
+	background: #0066FF;
+}
+
+/*Sakrivanje checkbox-a.*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Prikazivanje menija kada je nevidljivi checkbox cekiran!!!*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}

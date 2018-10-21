@@ -1,0 +1,309 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>MS SharePoint Server 2016</title>
+<meta name="SharePoint Server 2016" content="U okviru stranice Share Point 2016 nalazi se detaljno pojašnjenje instalacije SharePoint Server-a verzije 2016 kao i prikaz postupaka korak po korak.">
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+    $("#accordion" ).accordion({
+	collapsible: true,
+	active:false,
+    autoHeight: false,
+    navigation: true ,
+	styleHeight:'content'
+    });
+	
+});
+
+</script>	
+    
+<link href="css/server16.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div id="container">
+	<header>
+    
+    <div class="sat">   
+<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:200px;height:40px;"src="http://www.clocklink.com/html5embed.php?clock=004&timezone=GMT0100&color=blue&size=120&Title=&Message=&Target=&From=2017,1,1,0,0,0&Color=green"></iframe>
+</div>
+
+     
+      <p> <img src="slike/logo.png" id="logo" alt="logo"></p>
+
+<label for="show-menu" class="show-menu">Navigacioni Meni</label>
+	<input type="checkbox" id="show-menu" role="button">
+		<ul id="menu">
+		<li><a href="1. index.html">Početna Stranica</a></li>
+		<li><a href="2. uvod.html">Uvod</a></li>
+        <li><a href="3. istorija.html">Istorija</a></li>
+		<li>
+			<a href="4. tutorijal.html">Naučite sa Nama ￬</a>
+			<ul class="hidden">
+				<li><a href="5. online.html">MS SharePoint Online</a></li>
+				<li><a href="6. server10.html">MS SharePoint Server 2010</a></li>
+				<li><a href="7. server16.html">MS SharePoint Server 2016</a></li>
+			</ul>
+		</li>
+		<li><a href="8. onama.html">O Nama</a></li>
+		<li><a href="9. kontakt.html">Kontakt</a></li>
+	</ul>
+
+     
+  </header>
+ 
+    <div id="content">
+    <br><br>
+	  <div class="prvidiv">
+      
+      <h1 class="prvinaslov">Microsoft SharePoint 2016 Server</h1>
+      <br>
+      
+      <img id="ms16" src="slike/Server16 MS 2016.png" alt="SharePoint16">
+      <br><br>
+      
+      
+      
+      <div id="accordion">
+      
+        <h4 class="naslovi" id="krivogore">Instalacija MS SharePoint Server-a 2016</h4>       
+		<div class="sadrzaj1">
+        <blockquote>
+          <p>
+          Pre nego što krenemo sa instalacijom SharePoint Server-a 2016, potrebno je nagovestiti da se instalacija sastoji iz dva dela. Na sledećoj slici je prikazan prozor pri početku instalacije SharePoint-a gde imamo dve instalacije. Prva je <em><strong>Install software prerequisites</strong></em>, a druga je <em><strong>Install SharePoint Server</strong></em>. </p>
+          </blockquote>
+          
+          <img class="prvaslika" src="slike/1. Server16.png" alt="Instalacija">
+          
+          <blockquote>
+          <p>
+          Opcijom <em><strong>Install software prerequisites</strong></em> instaliramo sve ono što je zapravo potrebno SharePoint-u da bi radio. <strong>Prerequisites</strong> čini sve alatke koje needostaju za instalaciju MS SharePoint servera. Kad startujemo instalaciju on će ponuditi sve alatke koje su sadržane u instalaciji i kada kliknemo na install, krenuće redom da proverava da li je neka od aplikacija prethodno instalirana na serveru. Kada završi proveru i instaliranje trebamo dobiti prikaz kao na sledecoj slici. </p>
+          </blockquote>
+          
+          <img class="drugaslika" src="slike/2. Server16.png" alt="Prerequisites">
+          
+          <blockquote>
+          <p>
+          Nakon toga, sledi instalacija samog MS SharePoint Server-a 2016. Kada pokrenemo instalaciju MS SharePoint Servera moramo kreirati novu farmu servera (Server Farm) kao što je prikazano a sledećoj slici.
+          </p>
+          </blockquote>
+          
+          <img class="trecaslika" src="slike/3. Server16.png" alt="Instalacija SP16">
+          
+          <blockquote>
+          <p>
+          Sledeći korak je podešavanje konfiguracije baze podataka. Potrebno je ispravno popuniti polja koja su potrebna. U polje Database Server se upisuje ime servera (u našem slučaju ime servera iz virtuelne mašine - ) \ pa ime SQL servera (.) U polje Username smo upisali localserver.local\Administrator i u polje Password upisali smo šifru koja nam je ujedno i šifra Administrator naloga na računaru. Proces je prikazan na sledećoj slici.
+          </p>
+          </blockquote>
+          
+          <img class="cetvrtaslika" src="slike/4. Server16.png" alt="Konfiguracija">
+
+        </div>
+        
+        <h4 class="naslovi">Primena SharePoint-a na primeru kreiranja Blog sajta</h4>
+        
+        <div class="sadrzaj1">
+        
+        <blockquote>
+          	<p>
+          Kroz narednih nekoliko fotografija praćenim rečenicama, prikazaćemo proces kreiranja sajta i manipulacija istog. Za početak, prikazaćemo primer kreiranja <strong>Blog</strong> sajta. Takođe, prikazaćemo i dalje upravljanje istim, dodavanje post-ova, upravljanje post-ovima, upravljanje komentarima i kategorijama. Vrlo je lako i korisno napraviti svoj Blog sajt. </p>
+          	</blockquote>
+            
+            <img class="petaslika" src="slike/5. Server16.jpg" alt="Demo Strana">
+            
+            <blockquote>
+          	<p>
+          Na slici broj 5 prikazana je <strong>Demo</strong> stranica SharePoint-a 2016, uz pomoć nje imamo mogućnost da kreiramo nove stranice, da upravljamo stranicama, da kreiramo aplikacije, da kreiramo sajtove, menjamo izgled, podešavamo sajt i imamo pomoćnu opciju – Getting started. </p>
+       	  </blockquote>
+            
+        <blockquote>
+          	<p>
+          Kako bismo kreirali nov sajt izabraćemo opciju "Site contents" iz padajuće liste koju dobijamo klikom na ikonicu<img src="slike/Server16 krug.png" alt="Site contents">.
+         	</p>
+       	  </blockquote>
+            
+            <img class="sestaslika" src="slike/6. Server16.jpg" alt="Dodatne opcije">
+            
+            
+            <blockquote>
+          	<p>
+          Na prethodnoj slici je prikazana stranica <strong>Site contents</strong>, na kojoj se vidi sadržaj koji smo koristili. Kako bi smo počeli sa kreiranjem našeg Blog sajta, moramo kliknuti na „<strong>new subsite</strong>“ kao što je prikazano na slici iznad. </p>
+	<dl>
+		<dt> - Naslov sajta (Title)</dt>
+		<dt> - Opis sajta ()</dt>
+		<dt> - Naziv URL-a (URL name)</dt>
+		<dt> - Selektovati jedan od Template-a:</dt>
+			<dd> - Team site – Timski sajt</dd>
+			<dd> - Blog – Blog sajt (mi smo izabrali ovu opciju)</dd>
+			<dd> - Project site – Projektni sajt</dd>
+			<dd> - Community site – Društveni sajt</dd>
+		<dt> - Podesiti korisničke dozvole (User permissions)</dt>
+			<dd> - Možemo podesiti da korisničke dozvole budu kao i dozvole kod „Parent“ sajta – Use same permissions as parent site 	(mi smo izabrali ovu opciju)</dd>
+			<dd> - Možemo podesiti jedinstvene korisničke dozvole samo za ovaj sajt – Use unique permissions.</dd>
+		<dt> - I još neke dodatne opcije...</dt>
+	</dl>
+
+   		  </blockquote>
+           <br>
+          <img class="sedmaslika" src="slike/7. Server16 Prikaz New SP Site stranice prazne.png" alt="Dodatne opcije">
+          <img class="osmaslika" src="slike/7. Server16 Prikaz New SP Site stranice popunjene.png" alt="Dodatne opcije">
+          <img class="devetaslika" src="slike/Server16 prikaz.png" alt="Dodatne opcije">
+           <blockquote>
+           <p>
+           Na slici desno prikazana je naša popunjena stranica.
+           <dl>
+           		<dt> - Za ime smo izabrali „My Blog Site“</dt>
+				<dt> - Opis je „a simple blog site“</dt>
+				<dt> - URL nam je …„myblog“</dt>
+           </dl>
+		  </p></blockquote>
+          <blockquote>
+            <p>
+            Kada smo popunili sve podatke i izabrali sve opcije kliknemo na dugme <strong>Create</strong> i SharePoint će odraditi preostali posao. Nakon završetka kreiranja sajta, trebalo bi da se naslov sajta pojavi ispod linka „<strong>new subsite</strong>“ kao što se vidi na slici skroz desno. </p>
+           </blockquote>
+            
+          <img class="desetaslika" src="slike/17. Server16.png" alt="Pocetni izgled Blog sajta">
+           
+           
+           
+           <blockquote>
+           <p>
+           Ovo je početni izgled našeg Blog sajta. Odavde možemo manipulisati sajtom koristeći „<strong>Blog tools</strong>“:
+			<dl>
+				<dt> - <strong>Create a post</strong> – Napraviti novu objavu</dt>
+            	<dt> - <strong>Menage posts</strong> – upravljati trenutnim objavama</dt>
+            	<dt> - <strong>Menage comments</strong> – upravljanje komentarima</dt>
+            	<dt> - <strong>Menage categories</strong> – upravljati kategorijama</dt>
+           		<dt> - <strong>Change post layout</strong> – menjati izgled našeg Blog-a</dt>
+            </dl>
+ 
+           </p>
+           </blockquote>
+           
+          <blockquote>
+           <p>
+           Na sledećoj slici prikazana je opcija „<em><strong>manage posts</strong></em>“ i naše trenutne objave. Mi trenutno imamo samo početnu (default) objavu. Ovde možemo modifikovati trenutne ili dodavati nove. Možemo ih prikazati po Arhivi, po autoru ili izabrati prikaz svih objava. Takođe možemo, pretražiti posebnu objavu po rečima koje su u toj objavi. </p>
+           </blockquote>
+           
+           <img class="jedanaestaslika" src="slike/8. Server16.png" alt="Manage Posts">
+        
+        </div>
+        
+
+        
+        <h4 class="naslovi">Primena SharePoint-a na primeru kreiranja Projektnog sajta</h4>
+        <div class="sadrzaj1">
+        
+        <blockquote>
+           <p style="width:600px;">
+           Kako bismo napravili <strong>Project</strong> sajt, potrebno je da u „<em><strong>Site Contents</strong></em>“ odaberemo ponovo link „<em><strong>new subsite</strong></em>“. Iz liste za templejt ćemo sada odabrati <strong>Project site</strong>. Takođe potrebno je popuniti stranicu kao što je prikazano na sledećoj slici. Nakon završetka kreiranja sajta kliknemo na „<strong>Create</strong>“ kako bi SharePoint odradio preostali posao. </p>
+           </blockquote>
+           
+           <blockquote>
+           <p>
+           Kasnije u okviru jednog sajta, možemo kreirati timski sajt itd..
+           </p>
+           </blockquote>
+           
+           <img class="dvanaestaslika" src="slike/9. Server16.png" alt="Timski sajt">
+        
+        </div>
+        
+        <h4 class="poslednjinaslov">Primena SharePoint-a na primeru kreiranja aplikacije</h4>
+        <div class="poslednjisadrzaj">
+      
+        <blockquote>
+        <p>
+        Pre svega, potrebno je da kliknemo na <img src="slike/Server16 krug.png" width="40" alt="Padajuci meni"> kako bismo iz padajućeg menija izabrali opciju „<em><strong>add an app</strong></em>“. Otvoriće nam se sledeća stranica sa prikazom SharePoint aplikacija. </p>
+        </blockquote>
+
+        <h4 class="naslovi">Kreiranje Task-a</h4>
+        <div class="sadrzaj1">
+        
+        <blockquote>
+         <p>
+         U sledećem primeru ćemo prikazati kako se kreira određeni zadatak (<strong>Task</strong>). Pre svega, na ovoj stranici ćemo izabrati opciju „<em><strong>Tasks</strong></em>“ koja će nam otvoriti prozor prikazan na slici 14. </p>
+         </blockquote>
+         
+         <img class="trinaestaslika" src="slike/10. Server16.png" alt="Aplikacije">
+         <img class="cetrnaestaslika" src="slike/Server16 prozor Tasks.png" alt="Tasks - Zadaci">
+         
+         <blockquote>
+         <p>
+         U okviru prozora koji nam je prikazan na slici iznad potrebno je da damo ime našem <strong>Task</strong>-u, mi smo izabrali ime <strong>Daily Tasks</strong>. Nakon toga potrebno je da potvrdimo kreiranje tako što klinemo na dugme „<strong>Create</strong>“. </p>
+         </blockquote>
+         
+         <img class="petnaestaslika" src="slike/11. Server16.png" alt="Dnevni zadaci">
+         
+         <blockquote>
+         <p>
+         Klikom na kreirani <strong>Daily Tasks</strong>, otvara nam se naša aplikacija, koja je prikazana na slici ispod. U okviru nje možemo pregledamo Task-ove, da kreiramo nove Task-ove, modifikujemo trenutne. </p>
+         </blockquote>
+         
+         <img class="sesnaestaslika" src="slike/12. Server16.jpg" alt="Modifikovanje zadataka">
+        
+        </div> 
+        
+        <h4 class="naslovi">Kreiranje Links-a</h4>
+        <div class="sadrzaj1">
+        
+        
+         <blockquote>
+         <p>
+         Da bismo kreirali <strong>Link</strong> potrebno je da iz odabira SharePoint aplikacija odaberemo <em><strong>Links</strong></em> aplikaciju. Nakon klika prikazaće nam se prozor kao na sledećoj slici. Potrebno je u odgovarajuće polje uneti ime za <strong>Link</strong>. Nakon unosa imena, moramo potvrditi kreiranje Linka na dume „<strong>Create</strong>“. </p>
+         </blockquote>
+         
+         <img class="sedamnaestaslika" src="slike/Server16 prozor Links.png" alt="Linkovi">
+         <img class="osamnaestaslika" src="slike/13. Server16.png" alt="Linkovi">
+         
+         <blockquote>
+         <p>
+         Klikom na „<strong>My Links</strong>“ na „<em><strong>Site Contents“</strong></em> stranici otvara nam se stranica koja je prikazana na slici dloe - levo. Na ovoj stranici nam je dozvoljeno da dodajemo nove linkove, pregledamo i manipulišemo trenutnim. Klikom na „<em><strong>new link</strong></em>“ dodajemo novi link. </p>
+         </blockquote>
+         
+         <img class="devetnaestaslika" src="slike/14. Server16.png" alt="Dodavanje linkova">
+         <img class="dvadesetaslika" src="slike/15. Server16.jpg" alt="Dodavanje linkova">
+         
+         <blockquote>
+         <p>
+         Na ovoj stranici, u određena polja moramo uneti, <strong>URL</strong> Web adrese (primer je http://www.google.com), takođe smo u mogućnosti da damo <strong>opis Link</strong>-a (primer je Google site), i <strong>dodatni opis</strong> (primer je Google site link.). Klikom na dugme „<strong>Save</strong>“ ćemo zabeležiti kreirani link. </p>
+         </blockquote>
+         
+         <img class="dvadesetprvaslika" src="slike/16. Server16.png" alt="Prikaz Linkova">
+        
+        </div> 
+        
+        </div>
+
+  
+  </div>
+  
+  </div>
+
+
+<div class="futer" align="center">
+ 
+ <p>© AVIATO | 2017. | Sva prava zadržana.</p>
+ <div class="slike">
+  <a href="https://www.youtube.com/watch?v=x8tgKBXmmPg&list=PLXtHYVsvn_b-gqw2KcW0vzRyHRjnOtY-6"><img src="slike/youtube.png" alt="youtube"></a>
+  
+  <a href="https://products.office.com/en-us/sharepoint/collaboration">
+  <img src="slike/microsoft.png" alt="microsoftoffice"></a>
+  
+  <a href="https://www.instagram.com/microsoft/"> <img src="slike/instagram.png" alt="instagram"></a>
+  
+  <a href="https://www.facebook.com/SP2016News/"> <img src="slike/facebook.png" alt="facebook"></a>
+  </div>
+    </div>
+
+</body>
+</html>

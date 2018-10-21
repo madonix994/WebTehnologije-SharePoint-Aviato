@@ -1,0 +1,1014 @@
+@charset "utf-8";
+/* CSS Document */
+@media (min-width: 769px){
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*Dimenzije cele strane i Za heder.*/
+/*-------------------------------------------------------------------------*/
+
+#container{
+	height:100%;
+	width:100%;
+}
+
+header{ 
+	height:110px;
+	background:#036;
+	width:100%;
+	z-index:10;
+	position:fixed;
+}
+
+	/*Dimenzija strane i Dizajn boje iza prvog diva! */ /*-------------------------------------------------------------------------*/
+
+#content {
+	width:100%;
+	position:relative;
+	padding-top:100px;
+	background:url(../slike/noise-bg.png);
+	height:100%;
+}
+	/*KOD ZA MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo)*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	/*Centrirano*/
+	margin-left:20%;
+	margin-top:4%;
+}
+
+/*Pravljenje horizontalne liste sa razmacima*/
+li {
+	display:inline-block;
+	float: left;
+}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family:Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno, kao i podesavanje njegove velicine (duzina, sirina,...)*/
+li ul li {
+	display: block;
+	float: none;
+	position:relative;
+	right:168px;
+	bottom:34px;
+}
+
+/*Sprecavanje teksta da se prelomi*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Podesavanje logoa!*/
+#logo{ 
+	position:absolute;
+	width:25%;
+	height:85%;
+	bottom:35px;
+	left:40%;
+}
+
+
+/*Podesavanje futera!*/
+.futer{ 
+	position:relative;
+	bottom:0px;
+	height:60px;
+	width:100%;
+	background: #036;
+	color:white;
+}
+
+.futer p{ 
+	position:relative;
+	top:25px;
+	margin-left:470px;
+}
+
+.slike img{ 
+	position:relative;
+	left:730px;
+	bottom:5px;
+	height:40px;
+	padding-left:15px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+.prvidiv{
+	margin-bottom:50px;
+	background-color:#FFFFFF;
+	width:90%;
+	padding:20px;
+	margin-left:50px;
+	border:2px solid #CCCCCC;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20px;
+	text-align:justify;
+	height:2300px;
+	box-shadow: 0px 0px 15px black;
+}
+
+.sat{
+	position:absolute;
+	margin-right:30%;
+	top:35px;}
+
+.prvidiv h1{
+	text-align:center;
+	color:#0099FF;}
+
+
+	
+/*Podesavanje slike profila!*/	
+.prvidiv .licna{
+	height:200px;
+	width:200px;
+	margin-left:100px;
+	margin-right:100px;
+	}
+
+
+
+/*Podesavanje kontakt slicica!*/
+.kontakti{
+	padding-top:15px;
+	padding-left:30px;
+	padding-right:10px;
+	height:70px;
+	width:70px;
+	}
+	
+
+	
+/*Podesavanje prvog div-a sa profil slicicom i citatom!*/
+#bez{
+padding-bottom:0px;
+padding-top:40px;
+height:350px;
+width:420px;
+color:white;
+border-right:none;
+text-align:center;
+	}
+
+	
+	
+/*Podesavanje drugog div-a sa informacijama o clanu!*/
+#bez1{
+	padding-top:30px;
+color:white;
+margin-top:-390px;
+margin-left:410px;
+width:420px;
+	}
+
+
+
+/*Podesavanje treceg div-a sa kontakt slicicama!*/	
+#sa{ 
+border-left:dotted;
+height:400px;
+margin-top:-399px;
+margin-left:875px;
+width:120px;
+height:400px;
+color:white;
+background:url(../slike/papir.jpg);
+	border-radius:20px;}	
+
+
+
+/*Podesavanje levih div-ova tj. kartica!*/
+.levi{ 
+position:relative;
+width:1000px;
+right:935px;
+clear:both;
+height:400px;
+}	
+
+
+/*Podesavanje desnih div-ova tj. kartica!*/
+.desni{
+position:relative;
+width:950px;
+margin-bottom:30px;
+margin-top:-20px;
+left:900px;
+clear:both;
+height:400px;
+float:right;
+	}
+
+
+/*Podesavanje treceg div-a sa profil slicicom i citatom!*/
+#bez2{
+height:400px;
+margin-top:-330px;
+margin-left:430px;
+width:350px;
+height:350px;
+color:white;
+text-align:center;
+	}
+
+
+
+
+/*Podesavanje drugog div-a sa informacijama o clanu!*/
+#bez3{
+	border-right:none;
+	margin-top:-400px;
+	width:400px;
+	margin-left:0px;
+	color:white;
+	}
+	
+	
+	
+	
+/*Podesavanje prvog div-a sa kontakt slicicama!*/	
+#sa1{ 
+border-right:dotted;
+width:130px;
+height:380px;
+margin-top:0px;
+border-radius:20px;
+border-right:dotted;
+color:white;
+background:url(../slike/papir.jpg);
+margin-left:10px;}
+
+
+
+
+/*Podesavanje levog div-a sa prvim i drugim div-om u svrhe boje kartice!*/	
+#boja{
+	width:872px;
+	height:400px;
+	background:url(../slike/papir.jpg);
+	border-radius:20px;
+	border-right:dotted;
+	color:white;}
+	
+	
+	
+	
+/*Podesavanje desnog div-a sa drugim i trecim div-om u svrhe boje kartice!*/	
+#boja1{
+	width:800px;
+	height:381px;
+	background:url(../slike/papir.jpg);
+	color:white;
+	border-radius:20px;
+	border-left:dotted;
+	color:white;
+	margin-left:143px;
+	margin-top:-10px;
+	}
+}
+
+
+/*Stilizovanje menija, odnosno dugmeta, labele za meni!*/
+.show-menu {
+	cursor:pointer;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #666666;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Promena boje prilikom prelaska kursora reko dugmeta.*/
+.show-menu:hover{
+	color: #000000;
+	background: #0066FF;
+}
+
+/*Sakrivanje checkbox-a.*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Prikazivanje menija kada je nevidljivi checkbox cekiran!!!*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+													/*RESPONSIVE ZA TABLET!*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+	body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/*Dimenzije cele strane i Za heder.*/
+/*-------------------------------------------------------------------------*/
+
+#container{
+	height:100%;
+	width:100%;
+}
+
+header{ 
+	height:50px;
+	background: #036;
+	width:100%;
+	z-index:10;
+	position:relative;
+}
+
+	/*Dimenzija strane i Dizajn boje iza prvog diva! */ /*-------------------------------------------------------------------------*/
+
+#content {
+		width:100%;
+		position:relative;
+		top:0px;
+		background:url(../slike/noise-bg.png);
+		bottom:80%;
+		height:100%;
+}
+	
+	/*KOD ZA MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo) - ODNOSNO, postavljanje dugmeta preko koga se pojavljuje meni na vrh stranice.*/
+ul {
+	position: static;
+	display: none;
+	bottom:100px;
+}
+
+	/*Postavljanje pune sirine menija!*/
+	ul li, li a {
+		width: 100%;
+	}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Sprecavanje teksta da se prelomi!*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Prikazivanje dugmeta "Navigacioni Meni"*/
+	.show-menu {
+		display:block;
+	}
+
+
+/*Podesavanje logoa!*/
+#logo{
+	display:none;
+	position:relative;
+	width:50%;
+	height:100px;
+	margin-left:0px;
+	top:50px;
+}
+
+
+/*Podesavanje futera!*/
+.futer{ 
+	width:100%;
+	height:60px;
+	position:relative;
+	background: #036;
+	color:white;
+	text-align:center;
+}
+
+.futer p{ 
+	position:relative;
+	top:25px;
+	font-size:1em;
+	right:20%;
+}
+
+.slike img{ 
+	position:relative;
+	bottom:5px;
+	height:40px;
+	left:20%;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+.prvidiv{
+	margin-bottom:50px;
+	background-color:#FFFFFF;
+	width:90%;
+	padding:20px;
+	margin-left:20px;
+	border:2px solid #CCCCCC;
+	border-radius:25px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:16px;
+	text-align:justify;
+	height:1900px;
+	box-shadow: 0px 0px 15px black;
+}
+
+.prvidiv h1{
+	text-align:center;
+	color:#0099FF;}
+	
+	
+/*Podesavanje slike profila!*/	
+.prvidiv .licna{
+	height:150px;
+	width:150px;
+	margin-left:100px;
+	margin-right:100px;
+	}
+
+
+
+/*Podesavanje kontakt slicica!*/
+.kontakti{
+	padding-top:25px;
+	padding-left:13px;
+	padding-right:10px;
+	height:40px;
+	width:40px;
+	}
+
+
+
+/*Podesavanje prvog div-a sa profil slicicom i citatom!*/	
+#bez{
+padding-bottom:0px;
+padding-top:40px;
+height:350px;
+width:300px;
+color:white;
+border-right:none;
+text-align:center;
+margin-left:-11px;}
+
+
+	
+	
+/*Podesavanje drugog div-a sa informacijama o clanu!*/	
+#bez1{
+padding-top:30px;
+color:white;
+margin-top:-410px;
+margin-left:294px;
+width:300px;
+}
+	
+	
+	
+/*Podesavanje treceg div-a sa kontakt slicicama!*/		
+#sa{ 
+border-left:dotted;
+margin-top:-302px;
+margin-left:619px;
+width:70px;
+height:301px;
+color:white;
+background:url(../slike/papir.jpg);
+border-radius:20px;
+}	
+
+
+
+/*Podesavanje levih div-ova tj. kartica!*/
+.levi{ 
+position:relative;
+width:1000px;
+clear:both;
+height:320px;
+margin-left:-10px;
+}	
+
+
+
+/*Podesavanje desnih div-ova tj. kartica!*/
+.desni{
+position:relative;
+width:950px;
+margin-top:0px;
+clear:both;
+height:340px;
+}
+
+
+
+/*Podesavanje treceg div-a sa profil slicicom i citatom!*/
+#bez2{
+height:320px;
+margin-top:-300px;
+margin-left:330px;
+width:300px;
+color:white;
+text-align:center;
+}
+	
+	
+	
+/*Podesavanje drugog div-a sa informacijama o clanu!*/	
+#bez3{
+border-right:none;
+margin-top:-340px;
+width:400px;
+margin-left:0px;
+color:white;	
+}
+
+
+
+/*Podesavanje prvog div-a sa kontakt slicicama!*/		
+#sa1{ 
+border-right:dotted;
+width:70px;
+height:321px;
+border-radius:20px;
+border-right:dotted;
+color:white;
+background:url(../slike/papir.jpg);
+margin-left:-15px;
+}
+
+
+
+/*Podesavanje levog div-a sa prvim i drugim div-om u svrhe boje kartice!*/
+#boja{
+	width:622px;
+	height:300px;
+	background:url(../slike/papir.jpg);
+	border-radius:20px;
+	border-right:dotted;
+	color:white;
+	margin-left:-6px;}
+
+
+
+
+/*Podesavanje desnog div-a sa drugim i trecim div-om u svrhe boje kartice!*/		
+#boja1{
+	width:620px;
+	height:320px;
+	background:url(../slike/papir.jpg);
+	color:white;
+	border-radius:20px;
+	border-left:dotted;
+	color:white;
+	margin-left:57px;
+	margin-top:21px;
+	}
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+													/*RESPONSIVE ZA MOBILNI!*/
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 481px) {
+	body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,img,form{ 
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+/*Dimenzije cele strane i Za heder.*/
+/*-------------------------------------------------------------------------*/
+#container{
+	height: 100%;
+	width:100%;
+}
+
+header{ 
+	height:50px;
+	background:#036;
+	width:100%;
+	z-index:10;
+	position:relative;
+}
+	
+	
+	
+/*Dimenzija strane i Dizajn boje iza prvog diva! */ /*-------------------------------------------------------------------------*/	
+#content {		
+	width:100%;
+	position:relative;
+	top:0px;
+	background: #FFFFFF;
+	bottom:80%;
+	padding-bottom:20px;
+	height:100%;
+}
+		
+	/*ZA NOVI MENI!!!!!*/
+	
+/*Prvi UL - ceo meni (prvi nivo) - ODNOSNO, postavljanje dugmeta preko koga se pojavljuje meni na vrh stranice.*/
+ul {
+	position: static;
+	display: none;
+	bottom:100px;
+}
+
+	/*Postavljanje pune sirine menija!*/
+	ul li, li a {
+		width: 100%;
+	}
+
+/*Stilizovanje teksta u celom meniju! Stilizovanje pozadine u prvom nivou!*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: white;
+	background: #0066FF;
+	text-decoration: none;
+}
+
+/*Promena boje pozadine i teksta prelazenjem kursora preko prvog nivoa.*/
+li:hover a {
+	background: #0000CC;
+	color: #FFFFFF;
+}
+
+/*Stilizovanje padajuceg menija.*/
+li:hover ul a {
+	background: #0033CC;
+	color: #FFFFFF;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Stilizovanje padajuceg menija prelasnom kursora preko njega.*/
+
+li:hover ul a:hover {
+	background: #003399;
+	color: #FFFFFF;
+}
+
+/*Sakrivanje padajuceg menija.*/
+li ul {
+	display: none;
+}
+
+/*Pravljenje padajuceg menija vertikalno*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Sprecavanje teksta da se prelomi!*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Prikazivanje padajuceg menija prelaskom kursora preko prvog nivoa.*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Prikazivanje dugmeta "Navigacioni Meni"*/
+	.show-menu {
+		display:block;
+	}
+	
+	
+	
+/*Podesavanje vezana za LOGO!*/
+#logo{ 
+	display: none;
+	position:relative;
+	width:300px;
+	height:100px;
+	margin-left:0px;
+	top:50px;
+}
+
+
+/*Podesavanje futera!*/
+.futer{ 
+	bottom:0px;
+	height:60px;
+	position:relative;
+	background: #036;
+	color:white;
+}
+
+.futer p{ 
+	position:relative;
+	font-size:14px;
+	top:25px;
+	margin-left:100px;
+}
+
+.slike img{
+	display:none; 
+	position:relative;
+	left:150px;
+	bottom:5px;
+	height:40px;
+	padding-left:15px;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+															/*SADRZAJ!*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+.prvidiv{
+	margin-bottom:50px;
+	background-color:#FFFFFF;
+	padding:20px;
+	margin-left:20px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	text-align:justify;
+	height:1900px;
+}
+
+
+
+
+.prvidiv h1{
+	text-align:center;
+	color:#0099FF;}
+
+
+
+/*Podesavanje slike profila!*/		
+.prvidiv .licna{
+	height:100px;
+	width:100px;
+	margin-left:100px;
+	margin-right:100px;
+	margin-top:-35px;
+	}
+
+
+
+/*Podesavanje kontakt slicica!*/
+.kontakti{
+	padding-top:25px;
+	padding-left:13px;
+	padding-right:10px;
+	height:50px;
+	width:50px;
+	}
+
+
+
+/*Podesavanje prvog div-a sa profil slicicom i citatom!*/		
+#bez{
+padding-bottom:0px;
+padding-top:40px;
+height:350px;
+width:160px;
+color:white;
+border-right:none;
+text-align:center;
+margin-left:-1px;}
+
+
+/*Podesavanje da se ne vidi citat prvog div-a !*/	
+#bez pre{
+	display:none;}
+
+
+
+/*Podesavanje drugog div-a sa informacijama o clanu!*/		
+#bez1{
+padding-top:0px;
+color:white;
+margin-top:-300px;
+margin-left:0px;
+width:150px;
+}
+	
+
+
+/*Podesavanje treceg div-a sa kontakt slicicama!*/		
+#sa{ 
+border-left:dotted;
+margin-top:-339px;
+margin-left:306px;
+width:80px;
+height:340px;
+color:white;
+background:url(../slike/papir.jpg);
+border-radius:20px;
+}	
+
+
+
+/*Podesavanje levih div-ova tj. kartica!*/
+.levi{ 
+position:relative;
+width:1000px;
+clear:both;
+height:320px;
+margin-left:-10px;
+}	
+
+
+
+
+/*Podesavanje desnih div-ova tj. kartica!*/
+.desni{
+position:relative;
+width:950px;
+margin-top:0px;
+clear:both;
+height:340px;
+}
+
+
+
+/*Podesavanje treceg div-a sa profil slicicom i citatom!*/
+#bez2{
+height:320px;
+margin-top:-160px;
+margin-left:0px;
+width:150px;
+color:white;
+text-align:center;
+}
+
+
+/*Podesavanje da se ne vidi citat treceg div-a !*/
+#bez2 pre{
+	display:none;}
+
+
+/*Podesavanje drugog div-a sa informacijama o clanu!*/		
+#bez3{
+	border-right:none;
+	margin-top:-340px;
+	width:130px;
+	margin-left:0px;
+	color:white;
+	border-top:1px dotted blue;
+	height:200px;
+	position:relative;
+	}
+	
+#bez3 pre{
+margin-top:70px;}
+
+
+/*Podesavanje prvog div-a sa kontakt slicicama!*/
+#sa1{ 
+border-right:dotted;
+width:80px;
+height:341px;
+border-radius:20px;
+border-right:dotted;
+color:white;
+background:url(../slike/papir.jpg);
+margin-left:-15px;
+}
+
+
+
+/*Podesavanje levog div-a sa prvim i drugim div-om u svrhe boje kartice!*/
+#boja{
+	width:310px;
+	height:340px;
+	background:url(../slike/papir.jpg);
+	border-radius:20px;
+	border-right:dotted;
+	color:white;
+	margin-left:-6px;}
+
+
+
+
+/*Podesavanje desnog div-a sa drugim i trecim div-om u svrhe boje kartice!*/		
+#boja1{
+	width:310px;
+	height:340px;
+	background:url(../slike/papir.jpg);
+	color:white;
+	border-radius:20px;
+	border-left:dotted;
+	color:white;
+	margin-left:68px;
+	margin-top:0px;
+	}
+	
+	}

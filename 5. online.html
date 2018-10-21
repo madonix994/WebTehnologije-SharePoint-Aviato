@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="SharePoint Online" content="U okviru stranice SharePoint Online nalazi se prikaz i objašnjenje korišćenja online verzije SharePoint-a.">
+<title>MS SharePoint Online</title>
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+
+<script>
+
+	$(document).ready(function(){
+    $("#accordion" ).accordion({
+	collapsible: true,
+	active:false,
+    autoHeight: false,
+    navigation: true ,
+	styleHeight:'content'
+    });
+	
+});
+
+</script>	
+    
+<link href="css/online.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+
+<div id="container">
+	<header>
+    
+    <div class="sat">   
+<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:200px;height:40px;"src="http://www.clocklink.com/html5embed.php?clock=004&timezone=GMT0100&color=blue&size=120&Title=&Message=&Target=&From=2017,1,1,0,0,0&Color=green"></iframe>
+</div>
+     
+      <p> <img src="slike/logo.png" id="logo" alt="logo"></p>
+
+ <label for="show-menu" class="show-menu">Navigacioni Meni</label>
+	<input type="checkbox" id="show-menu" role="button">
+		<ul id="menu">
+		<li><a href="1. index.html">Početna Stranica</a></li>
+		<li><a href="2. uvod.html">Uvod</a></li>
+        <li><a href="3. istorija.html">Istorija</a></li>
+		<li>
+			<a href="4. tutorijal.html">Naučite sa Nama ￬</a>
+			<ul class="hidden">
+				<li><a href="5. online.html">MS SharePoint Online</a></li>
+				<li><a href="6. server10.html">MS SharePoint Server 2010</a></li>
+				<li><a href="7. server16.html">MS SharePoint Server 2016</a></li>
+			</ul>
+		</li>
+		<li><a href="8. onama.html">O Nama</a></li>
+		<li><a href="9. kontakt.html">Kontakt</a></li>
+	</ul>
+
+
+     
+  </header>
+ 
+    <div id="content">
+    <br><br>
+	  <div class="prvidiv">
+    		
+   <h1 class="prvinaslov">Microsoft SharePoint Online</h1>
+      <br>
+      <img id="mso" src="slike/Online MS online.png" alt="SharePoint Online">
+      <br><br>
+      
+      
+      
+      <div id="accordion">
+      
+        <h4 class="naslovi" id="krivogore">
+          Primena SharePoint-a na primeru kreiranja sajta grupe
+        </h4>       
+		<div class="sadrzaj1">
+        <blockquote>
+		<p>
+            Kroz narednih nekoliko fotografija praćenim rečenicama, prikazaćemo celokupan proces prijavljivanja na Microsoft Office365, ulaska na MS SharePoint, kreiranja grupe na njemu, kreiranja i manipulacija sajtom u grupi, dodavanje stranica, lista, biblioteka, aplikacija, dizajn sajta, kao i mnoge druge sposobnosti MS SharePoint-a:
+          </p></blockquote>
+
+        <img class="prvaslika" src="slike/1. Online Login Menu.png" alt="Login Menu" >
+        <img class="drugaslika" src="slike/1.2 Online Izgled početne stranice Office 365 paketa.jpg" alt="Pocetna Strana">
+        <br>
+	
+    	<blockquote>
+        <p>
+        Na levoj slici, nakon kreiranja naloga (nakon registracije na MS Office 365 web paket), dat je postupak prijavljivanja na isti, unošenjem e-mail adrese i šifre za pristup paketu. Na desnoj slici nalazi se izgled Office 365 početne (matične) strane. Na početnoj strani nalazi se dosta web aplikacija (servisa) koji nam pomažu u različitim situacijama. Pored OneDrive for Business, OneNote beležnice, nove aplikacije Sway, tradicionalnih Word, Excel i PowerPoint aplikacija, Formi, Planera, Osoba, moramo napomenuti i MS SharePoint koji je ujedno i tema ovog seminarskog rada.
+        </p></blockquote>
+
+        
+        <img class="trecaslika" src="slike/2. Online Izgled MS SharePointa nakon prijave.jpg" alt="Prijava">
+
+		<blockquote>
+        <p>
+        Nakon prijave, na slici iznad nalazi se izgled “ početne” strane SharePoint-a. Na njoj se nalaze sa leve strane grupe (sajtovi) koje se prate, često posećivane grupe i linkovi.Takodje je potrebno napomenuti Search bar, u okviru koga naprednom pretragom možemo pretraživati ljude, konverzacije, video snimke i sve od navedenog.
+        </p></blockquote>
+
+        
+        <img class="cetvrtaslika" src="slike/3. Online Kreiranje grupe.jpg" alt="Grupe">
+        
+        <br>
+        
+		<blockquote>
+        <p>
+        Preko aplikacije <strong>Outlook</strong>, koja se nalazi u okviru Office 365 paketa, klikom na dugme <strong>Novo</strong> i popunjavanjem imena i opisa, kao i podešavanjem privatnosti grupe, jezika grupe, kreiramo novu grupu sa sajtom tima u okviru SharePoint-a, kao što je prikazano na slici ispod. Kao primer kreirana je grupa: <em>OsiO primer</em>. </p></blockquote>
+
+        
+        <img class="petaslika" src="slike/4. Online Izgled kreirane grupe.jpg" alt="Kreirana Grupa">
+        
+        <br>
+        
+		<blockquote>
+        <p>
+        Na slici iznad nalazi se prikaz izgleda napravljene grupe. Tu možemo vršiti dodavanje novih članova u grupu. Članovi mogu biti sa privilegijama (posetilac, Administrator,...) i bez privilegija. Pored privilegija pri vrhu ekrana imamo tabove preko kojih možemo da manipulišemo grupom.
+        </p></blockquote>
+
+        
+		<blockquote>
+        <p>
+        Klikom na dugme <strong>Razgovori</strong> možemo da pošaljemo ili primimo poruku od bilo koga ko je iz grupe preko grupnog mail-a koji je sam generisan prilikom kreiranja grupe i obično sadrži naziv: ime_grupe@ftn.edu.rs. FTN u Čačku je sklopio ugovor sa Microsoft-om da studenti imaju pravo korišćenja Office 365 usluga, među kojima je i MS SharePoint, pa je zbog toga domen <em>ftn.edu.rs</em>. </p></blockquote>
+
+		<blockquote>
+        <p>
+        Klikom na dugme <strong>Datoteke</strong> pristupamo OneDrive oblaku koji služi za smeštanje podataka sa računara na internet i manipulisanje sa istim. Svi podaci koje smo koristili za bilo šta u okviru grupe nalaze se na OneDrive-u. </p></blockquote>
+
+		<blockquote>
+        <p>
+        Klikom na dugme <strong>Kalendar</strong>, dobijamo kalendarski prikaz svih prethodno zabeleženih obaveza i događaja. Na kalendaru su po default-u selektovane obaveze i događaji iz svih grupa čiji smo članovi. Možemo izabrati da nam se prikazuju obaveštenja iz samo jedne grupe koja nas interesuje. Takođe postoji opcija slanja obaveštenja na mail kao podsetnik o događaju. </p></blockquote>
+        
+        <blockquote>
+        <p>
+        Klikom na dugme Belež<strong></strong>nica, otvara se OneNote u okviru Office 365 paketa koji služi za uzimanje beleški, pisanja teksta, crtanja, ubacivanja slika, itd. </p></blockquote>
+
+		<blockquote>
+        <p>
+        Klikom na dugme <strong>Planer</strong>,  otvara nam se MS Planer u okviru Office 365 koji služi za precizno planiranje događaja, odnosno dodavanjem zadataka članu ili članovima grupe, sa određivanjem vremena zaršetka zadatka. </p></blockquote>
+
+		<blockquote>
+        <p>
+        Klikom na dugme <strong>Sajt</strong>, otvara nam se početna stranica automatski generisanog sajta grupe (tima). </p></blockquote>
+
+        
+        <img class="sestaslika" src="slike/5. Online Izgled sajta grupe.jpg" alt="Pocetna Strana">
+
+		<blockquote>
+        <p>
+        Na slici iznad je prikazana početna stranica sajta grupe. Takođe, u gornjem desnom uglu početne stranice sajta pritiskom na <strong>Following</strong> dugme možemo zapratiti sajt grupe. Kada zapratimo sajt, on se automatski pojavljuje u gornjem levom uglu početne stranice SharePoint-a, kao što smo u gore navedenom tekstu i spomenuli. Sredina sajta je rezervisana za Aktivnosti i ostala dešavanja na sajtu (postove, stranice, korisne linkove,...). Sa leve strane imamo meni (listu modula) preko kojih se krećemo kroz sajt. Klikom na dugme Novo, možemo kreirati: <strong>LISTU, BIBLIOTEKU DOKUMENATA, STRANICU I APLIKACIJU</strong>. </p></blockquote>
+        
+        </div>
+        
+        <h4 class="naslovi">
+          Kreiranje LISTE
+        </h4>
+        
+        <div class="sadrzaj1">
+        <br>
+        <img class="sedmaslika" src="slike/6.1 Online Kreiranje i izgled liste.png" alt="Lista">
+        
+        <blockquote>
+          <p>
+            Na slici iznad prikazan je postupak kreiranja <strong>liste</strong>, klikom na dugme <strong>Novo</strong> pa u padajucem meniju izabrati <strong>Lista</strong>. Kada se popune podaci kao što su naziv liste i opis i klikne na dugme <strong>kreiraj</strong> dobije se prazna lista. Kad smo kreirali praznu listu, kreiramo kolone koje će sačinjavati listu i biramo tip podataka koje će te kolone imati (srednja slika). Lista se popunjava nekim podacima i prikaz popunjene liste dat je na desnoj slici. </p>
+        </blockquote>
+        </div>
+        
+        <h4 class="naslovi">
+          Kreiranje BIBLIOTEKE DOKUMENATA
+        </h4>
+        <div class="sadrzaj1">
+        <br>
+        
+        <img class="osmaslika" src="slike/7.1 Online Kreiranje i izgled biblioteke.jpg" alt="Biblioteka">
+        <img class="devetaslika" src="slike/7.2 Online Kreiranje i izgled biblioteke.jpg" alt="Biblioteka">
+        
+        <blockquote>
+        <p>
+        Postupak kreiranja biblioteke dokumenata prikazan je na levoj slici. Kada se popune naziv biblioteke, opis i ostali elementi i klikne na dugme <strong>Kreiraj</strong>, dobija se prikaz biblioteke prikazan na desnoj slici. Biblioteka služi da se u nju upload-uju potrebni fajlovi (word dokumenti, power point prezentacije, slike, audio, video,...). </p>
+        </blockquote>
+        </div>
+        
+        <h4 class="naslovi">
+          Kreiranje STRANICE
+        </h4>
+        <div class="sadrzaj1">
+        <br>
+        
+        <img class="desetaslika" src="slike/8.1 Online Kreiranje stranice.jpg" alt="Kreiranje Stranica" >
+        <img class="jedanaestaslika" src="slike/8.2 Online Kreiranje stranice.jpg" alt="Kreiranje Stranica">
+        
+        <blockquote>
+        <p>
+        Klikom na dugme <strong>Novo</strong>, pa izborom <strong>Stranica</strong> u padajućem meniju dobijamo prozor za kreiranje stranica. Tu možemo kreirati stranice koristeći običan tekst, word, excel i ppt dokumente, slike, itd, kao što je prikazano na desnoj slici. Na levoj slici predstavljen je izgled stranice. </p>
+        </blockquote>
+        </div>
+        
+        <h4 class="naslovi">
+          Kreiranje APLIKACIJE
+        </h4>
+        <div class="sadrzaj1">
+        
+        <br>
+        
+        <img class="dvanaestaslika" src="slike/9. Online Primer odabira aplikacije.jpg" alt="Odabir aplikacije">
+        
+        <blockquote>
+        <p>
+        Nakon što kliknemo na dugme <strong>Novo</strong>, pa na <strong>Aplikacija</strong>, pojavljuje nam se sadržaj prikazan na slici iznad. Postoji više primera raznih aplikacija koje možemo kreirati. Na sledećoj slici prikazan je jedan takav primer kreiranja aplikacije izborom. </p>
+        </blockquote>
+        
+        <img class="trinaestaslika" src="slike/10.1 Online Primer kreiranja aplikacije.jpg" alt="Kreiranje aplikacije">
+        <img class="cetrnaestaslika" src="slike/10.2 Online Primer kreiranja aplikacije.jpg" alt="Kreiranje aplikacije">
+        
+        <blockquote>
+        <p>
+        Na levoj slici prikazana je opcija kreiranja Planiranja zadatka za određenog korisnika u okviru koje unosimo Naziv zadatka, datum početka i završetka zadatka, kao i korisnika kome je taj zadatak dodeljen.
+        </p>
+        </blockquote>
+        
+        
+        <blockquote>
+        <p>
+        Na desnoj slici prikazan je izgled gotove aplikacije, sa timeline-om na kome se nalaze dodeljeni zadaci kao i opcijom za dodavanje novog zadatka, korisnika ili edovanje postojećih zadataka.
+        </p>
+        </blockquote>
+        </div>       
+        
+        <h4 class="poslednjinaslov">
+          Konfiguracija
+        </h4>
+        <div class="poslednjisadrzaj">
+      
+      <blockquote>
+      <p>
+      Za konfiguraciju MS SharePoint web aplikacije uzeli smo par slika i takodje na primeru predstavili što bolje. Obzirom da je MS SharePoint veoma složena i obimna aplikacija sa dosta različitih namena, uzeli smo samo par slika kao primer dizajna i uređivanja sajta i regionalnih podešavanja.
+      </p>
+      </blockquote>
+      
+      <img class="petnaestaslika" src="slike/11. Online Podešavanje sajta grupe.jpg" alt="Podesavanje sajta">
+      
+      <blockquote>
+      <p>
+      Klikom na dugme <strong>Postavke</strong> i izabirom <strong>Postavke Lokacije</strong> u padajućem meniju, dobija se stranica sa svim podešavanjima veznim za grupu OSiO. Tu možemo promeniti elemente navigacije, grafički prikaz, možemo upravljati funkcijama lokacije,i mnoge druge funkcije. </p>
+      </blockquote>
+      
+      <img class="sesnaestaslika" src="slike/12. Online Promena izgleda sajta.jpg" alt="Promena izgleda">
+      
+      <blockquote>
+      <p>
+      Kao što smo u gore navedenom tekstu naveli, pored mnogobrojnih podešavanja za MS SharePoint, uzeli smo kao primer podešavanje grafičkog izgleda sajta, kao što je prikazano na slici iznad. Sam MS SharePoint nudi veliki izbor tema za sajt.
+      </p>
+      </blockquote>
+      
+      <img class="sedamnaestaslika" src="slike/13. Online Brzo pokretanje sajta.jpg" alt="Brzo Pokretanje">
+      
+      <blockquote>
+      <p>
+      Brzo pokretanje je takođe jedna od opcija za podešavanje MS SharePoint-a. Prikaz je na slici iznad. Pored podešavanja već postojećih modula, postoje i opcije za dodavanje novih veza za navigaciju, kao i za kreiranje novog zaglavlja.
+      </p>
+      </blockquote>
+      
+      <img class="osamnaestaslika" src="slike/14. Online Regionalna podešavanja.jpg" alt="Regionalna podesavanja">
+      
+      <blockquote>
+      <p>
+      Još jedno od mnogih podešavanja, a za naš primer poslednje podešavanje, to je regionalno podešavanje koje je prikazano na slici iznad. Tu se podešavaju podaci kao što su vremenska zona, redosled sortiranja podataka na sajtu, podešavanje kalendara, kao i omogućavanje alternativnog kalendara, definisanje radne nedelje, i mnoga druga podešavanja.
+      </p>
+      </blockquote>
+
+	  </div>
+
+  
+  </div>
+  
+  </div>
+
+
+<div class="futer" align="center">
+ 
+ <p>© AVIATO | 2017. | Sva prava zadržana.</p>
+ <div class="slike">
+  <a href="https://www.youtube.com/watch?v=x8tgKBXmmPg&list=PLXtHYVsvn_b-gqw2KcW0vzRyHRjnOtY-6"><img src="slike/youtube.png" alt="youtube"></a>
+  
+  <a href="https://products.office.com/en-us/sharepoint/collaboration">
+  <img src="slike/microsoft.png" alt="microsoftoffice"></a>
+  
+  <a href="https://www.instagram.com/microsoft/"> <img src="slike/instagram.png" alt="instagram"></a>
+  
+  <a href="https://www.facebook.com/SP2016News/"> <img src="slike/facebook.png" alt="facebook"></a>
+  </div>
+    </div>
+
+</body>
+</html>
